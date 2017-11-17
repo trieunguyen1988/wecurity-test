@@ -1,0 +1,100 @@
+<section class="content-header">
+    <h1><%=t 'admin.btn-detail', locale: get_locale %></h1>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+          <form class="form-horizontal">
+            <div class="box-body">              
+              <div class="form-group">
+                <label for="content" class="col-sm-2 control-label"><%=t 'admin.qs-content', locale: get_locale %></label>
+
+                <div class="col-sm-10">
+                  <input disabled type="text" name="content" value="<%= @data['content']%>" class="form-control" id="content" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-sm-2 control-label"><%=t 'admin.qs-options', locale: get_locale %></label>
+
+                <div class="col-sm-10">
+                  <div class="input-group <% unless @errors['option_1'].nil? %>has-error<% end %>">
+                      <span class="input-group-addon">(1)</span>
+                      <input disabled type="text" name="option_1" value="<%= @data['option_1']%>" class="form-control" placeholder="">
+                  </div><br>
+                  <div class="input-group <% unless @errors['option_2'].nil? %>has-error<% end %>">
+                      <span class="input-group-addon">(2)</span>
+                      <input disabled type="text" name="option_2" value="<%= @data['option_2']%>" class="form-control" placeholder="">
+                  </div><br>
+                  <div class="input-group <% unless @errors['option_3'].nil? %>has-error<% end %>">
+                      <span class="input-group-addon">(3)</span>
+                      <input disabled type="text" name="option_3" value="<%= @data['option_3']%>" class="form-control" placeholder="">
+                  </div><br>
+                  <div class="input-group <% unless @errors['option_4'].nil? %>has-error<% end %>">
+                      <span class="input-group-addon">(4)</span>
+                      <input disabled type="text" name="option_4" value="<%= @data['option_4']%>" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="answer" class="col-sm-2 control-label"><%=t 'admin.qs-answer', locale: get_locale %></label>
+
+                <div class="col-sm-10">
+                  <select disabled name="answer" class="form-control">
+                      <option value="1" <% if @data['answer'] == '1'%>selected="selected"<% end %>>1</option>
+                      <option value="2" <% if @data['answer'] == '2'%>selected="selected"<% end %>>2</option>
+                      <option value="3" <% if @data['answer'] == '3'%>selected="selected"<% end %>>3</option>
+                      <option value="4" <% if @data['answer'] == '4'%>selected="selected"<% end %>>4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="explain" class="col-sm-2 control-label"><%=t 'admin.qs-explain', locale: get_locale %></label>
+
+                <div class="col-sm-10">
+                  <input disabled type="text" name="explain" value="<%= @data['explain']%>" class="form-control" id="explain" placeholder="">
+                </div>
+              </div>              
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+              <a href="/admin">
+              <button type="button" class="btn btn-default"><i class="fa fa-fw fa-reply"></i> <%=t 'admin.btn-cancel', locale: get_locale %></button>
+              </a>
+              <button type="button" class="btn btn-danger pull-right" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-fw fa-trash-o"></i> <%=t 'admin.btn-delete', locale: get_locale %></button>
+            </div>
+            <!-- /.box-footer -->            
+          </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="modal-delete">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><%=t 'admin.txt-delete-title', locale: get_locale %></h4>
+      </div>
+      <div class="modal-body">
+        <p><%=t 'admin.txt-delete-confirm', locale: get_locale %></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><%=t 'admin.btn-close', locale: get_locale %></button>
+        <button type="button" class="btn btn-danger" id="btn-delete"><i class="fa fa-fw fa-trash-o"></i> <%=t 'admin.btn-delete', locale: get_locale %></button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script>
+$(document).ready(function () {
+  $('#btn-delete').click(function(){
+    window.location.href = '/admin/questions/delete/<%= @data['id']%>';
+  })
+});
+</script>

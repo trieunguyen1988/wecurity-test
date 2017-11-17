@@ -1,0 +1,75 @@
+<div class="col-md-12">
+    <div class="question-wrapper">
+        <div class="home">
+            <div class="row">
+
+                <div class="col-md-5 col-md-push-7">
+                    <img class="logo center-block" src="/public/images/logo.svg" alt="LIFULL">
+                </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <%=t 'message-welcome', locale: get_locale %>                    
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <a href="/set-language/vi" class="btn btn-flag <% if @locale == 'vi' %>current_lang<% end %>">
+                        <img src="/public/images/vi_flag.png" atl="Vietnamese"/>
+                    </a>
+                    <a href="/set-language/ja" class="btn btn-flag <% if @locale == 'ja' %>current_lang<% end %>">
+                        <img src="/public/images/jp_flag.png" atl="Japanese"/>
+                    </a>
+                    <a href="/set-language/en" class="btn btn-flag <% if @locale == 'en' %>current_lang<% end %>">
+                        <img src="/public/images/en_flag.png" atl="English"/>
+                    </a>
+                    <a href="/set-language/es" class="btn btn-flag <% if @locale == 'es' %>current_lang<% end %>">
+                        <img src="/public/images/es_flag.png" atl="Spanish"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="box-user-info">
+                        <div class="col-md-6 box box-warning">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><%=t 'user-header', locale: get_locale %></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <!-- form start -->
+                            <form class="form-horizontal" method="post" action="/save_user_info">
+                                <div class="box-body">
+                                    <div class="form-group <% unless @user_error.nil? %>has-error<% end %>">
+                                        <label for="fullname" class="col-sm-3 control-label"><%=t 'fullname', locale: get_locale %> <span class="required">(*)</span></label>
+
+                                        <div class="col-sm-9">
+                                            <input type="text" name="fullname" class="form-control" id="fullname" placeholder="<%=t 'fullname', locale: get_locale %>">
+                                            <% unless @user_error.nil? %>
+                                            <span class="help-block"><%=t 'error.fullname-require', locale: get_locale %></span>
+                                            <% end %>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="company" class="col-sm-3 control-label"><%=t 'company-name', locale: get_locale %></label>
+
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="company" id="company" placeholder="<%=t 'company-name', locale: get_locale %>">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="project" class="col-sm-3 control-label"><%=t 'project-name', locale: get_locale %></label>
+
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" name="project" id="project" placeholder="<%=t 'project-name', locale: get_locale %>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer text-center">
+                                    <button type="submit" class="btn btn-primary"><%=t 'btn-submit', locale: get_locale %></button>
+                                </div>
+                                <!-- /.box-footer -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

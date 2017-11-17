@@ -1,0 +1,78 @@
+<section class="content-header">
+    <h1><%=t 'admin.qs-lbl-list', locale: get_locale %></h1>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+            <!-- form start -->
+            <form class="form-horizontal" action="/admin/questions/create" method="post">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="content" class="col-sm-2 control-label">ID</label>
+
+                  <div class="col-sm-10">
+                    <input disabled type="text" name="id" value="<%= @question_id%>" class="form-control" id="content" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group <% unless @errors['content'].nil? %>has-error<% end %>">
+                  <label for="content" class="col-sm-2 control-label"><%=t 'admin.qs-content', locale: get_locale %> <span class="required">(*)</span></label>
+
+                  <div class="col-sm-10">
+                    <input type="text" name="content" value="<%= @data['content']%>" class="form-control" id="content" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-sm-2 control-label"><%=t 'admin.qs-options', locale: get_locale %> <span class="required">(*)</span></label>
+
+                  <div class="col-sm-10">
+                    <div class="input-group <% unless @errors['option_1'].nil? %>has-error<% end %>">
+                        <span class="input-group-addon">(1)</span>
+                        <input type="text" name="option_1" value="<%= @data['option_1']%>" class="form-control" placeholder="">
+                    </div><br>
+                    <div class="input-group <% unless @errors['option_2'].nil? %>has-error<% end %>">
+                        <span class="input-group-addon">(2)</span>
+                        <input type="text" name="option_2" value="<%= @data['option_2']%>" class="form-control" placeholder="">
+                    </div><br>
+                    <div class="input-group <% unless @errors['option_3'].nil? %>has-error<% end %>">
+                        <span class="input-group-addon">(3)</span>
+                        <input type="text" name="option_3" value="<%= @data['option_3']%>" class="form-control" placeholder="">
+                    </div><br>
+                    <div class="input-group <% unless @errors['option_4'].nil? %>has-error<% end %>">
+                        <span class="input-group-addon">(4)</span>
+                        <input type="text" name="option_4" value="<%= @data['option_4']%>" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group <% unless @errors['answer'].nil? %>has-error<% end %>">
+                  <label for="answer" class="col-sm-2 control-label"><%=t 'admin.qs-answer', locale: get_locale %> <span class="required">(*)</span></label>
+
+                  <div class="col-sm-10">
+                    <select name="answer" class="form-control">
+                        <option value="1" <% if @data['answer'] == '1'%>selected="selected"<% end %>>1</option>
+                        <option value="2" <% if @data['answer'] == '2'%>selected="selected"<% end %>>2</option>
+                        <option value="3" <% if @data['answer'] == '3'%>selected="selected"<% end %>>3</option>
+                        <option value="4" <% if @data['answer'] == '4'%>selected="selected"<% end %>>4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group <% unless @errors['explain'].nil? %>has-error<% end %>">
+                  <label for="explain" class="col-sm-2 control-label"><%=t 'admin.qs-explain', locale: get_locale %> <span class="required">(*)</span></label>
+
+                  <div class="col-sm-10">
+                    <input type="text" name="explain" value="<%= @data['explain']%>" class="form-control" id="explain" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <a href="/admin">
+                <button type="button" class="btn btn-default"><i class="fa fa-fw fa-reply"></i> <%=t 'admin.btn-cancel', locale: get_locale %></button>
+                </a>
+                <button type="submit" class="btn btn-info pull-right"><i class="fa fa-fw fa-save"></i> <%=t 'admin.btn-save', locale: get_locale %></button>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+        </div>
+    </div>
+</section>

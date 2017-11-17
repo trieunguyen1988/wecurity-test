@@ -1,0 +1,65 @@
+<div class="exam-header row">
+    <div class="box-body">
+        <div class="col-md-4">
+            <img class="logo exam-logo" src="/public/images/logo.svg" alt="LIFULL">
+        </div>
+        <div class="col-md-8">
+            <div class="pull-right">
+                <%= @user_data['fullname']%> (<a href="/logout"><%=t 'txt-logout', locale: get_locale %></a>)
+                <a href="/set-language/vi" class="btn btn-flag <% if @locale == 'vi' %>current_lang<% end %>">
+                    <img src="/public/images/vi_flag.png" atl="Vietnamese"/>
+                </a>
+                <a href="/set-language/ja" class="btn btn-flag <% if @locale == 'ja' %>current_lang<% end %>">
+                    <img src="/public/images/jp_flag.png" atl="Japanese"/>
+                </a>
+                <a href="/set-language/en" class="btn btn-flag <% if @locale == 'en' %>current_lang<% end %>">
+                    <img src="/public/images/en_flag.png" atl="English"/>
+                </a>
+                <a href="/set-language/es" class="btn btn-flag <% if @locale == 'es' %>current_lang<% end %>">
+                    <img src="/public/images/es_flag.png" atl="Spanish"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="question-wrapper">
+        <div class="exam">
+            <div class="box-body">
+                <% if @correct.to_i >= settings.point_passed%>
+                <div class="callout callout-success">
+                    <p><%=t 'result-passed', locale: get_locale %></p>
+                    <p><%=t 'result-point', locale: get_locale %>: <%= @correct %>/<%= @total_question %></p>
+                </div>
+                <% else %>
+                <div class="callout callout-danger">
+                    <p><%=t 'result-fail', locale: get_locale %></p>
+                    <p><%=t 'result-point', locale: get_locale %>: <%= @correct %>/<%= @total_question %></p>
+                </div>
+                <% end%>
+                <% if @questions != nil %>
+                    <ul class="list-group list-group-unbordered">
+                    <% @questions.each do |question|%>
+                    <li class="list-group-item <% if question.user_correct.to_i == 0%>has-error<% end %>">
+                        <span class="question_id"><%= question.id %></span> <%= question.content %> 
+                        <% if question.user_correct.to_i == 0%>
+                        <label class="has-error question_result"><i class="fa fa-times-circle-o"></i></label>
+                        <% else %>
+                        <label class="has-success question_result"><i class="fa fa-check"></i></label>
+                        <% end %>
+                    </li>
+                    <% end %>
+                    </ul>
+                <% end %>
+                <div class="text-center">
+                    <% if @correct.to_i >= settings.point_passed%>
+                    <a href="/exam/finish"><button class="btn btn-primary" type="button" ><%=t 'btn-finish', locale: get_locale %></button></a>
+                    <% else %>
+                    <a href="/exam/again"><button class="btn btn-danger" type="button" ><%=t 'btn-again', locale: get_locale %></button></a>
+                    <% end%>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

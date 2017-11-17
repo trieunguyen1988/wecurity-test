@@ -1,0 +1,15 @@
+.top-lang img{
+    width: 18px;
+}
+
+.top-lang .current_lang{
+    border: 1px solid #fff;
+}
+
+.required{
+    color: red;
+}
+
+.input-group .input-group-addon{
+    background-color: #eee;
+}

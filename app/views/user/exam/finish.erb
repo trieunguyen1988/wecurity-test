@@ -1,0 +1,34 @@
+<div class="exam-header row">
+    <div class="box-body">
+        <div class="col-md-4">
+            <img class="logo exam-logo" src="/public/images/logo.svg" alt="LIFULL">
+        </div>
+        <div class="col-md-8">
+            <div class="pull-right">
+                <%= @user_data['fullname']%> (<a href="/logout"><%=t 'txt-logout', locale: get_locale %></a>)
+                <a href="/set-language/vi" class="btn btn-flag <% if @locale == 'vi' %>current_lang<% end %>">
+                    <img src="/public/images/vi_flag.png" atl="Vietnamese"/>
+                </a>
+                <a href="/set-language/ja" class="btn btn-flag <% if @locale == 'ja' %>current_lang<% end %>">
+                    <img src="/public/images/jp_flag.png" atl="Japanese"/>
+                </a>
+                <a href="/set-language/en" class="btn btn-flag <% if @locale == 'en' %>current_lang<% end %>">
+                    <img src="/public/images/en_flag.png" atl="English"/>
+                </a>
+                <a href="/set-language/es" class="btn btn-flag <% if @locale == 'es' %>current_lang<% end %>">
+                    <img src="/public/images/es_flag.png" atl="Spanish"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="question-wrapper">
+        <div class="exam">
+            <div class="box-body">
+                <%=t 'txt-congratulation', locale: get_locale %>
+            </div>
+        </div>
+    </div>
+</div>

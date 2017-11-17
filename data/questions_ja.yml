@@ -1,0 +1,908 @@
+---
+questions:
+- !ruby/object:Question
+  id: 1
+  content: 社外でのネットワーク接続について、適切なものはどれでしょうか？
+  answer: 3
+  explain: 外部でのネットワーク接続では、データを盗聴される可能性があります。ファイルを保護しているだけでは、IDやパスワードなどの重要な情報が盗聴されてしまいます。重要な情報をやりとりする場合は、通信の暗号化(VPN)や認証などセキュリティ機能が十分に提供されているサービスを利用するようにしましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 会社貸与のPCを使用し、やりとりするファイルを暗号化等で保護しているのであれば、どのネットワークサービスに接続してもよい
+  - !ruby/object:Option
+    id: 2
+    content: ネットワークサービスの中には怪しいアクセスポイントなどもあるので、重要な情報をやりとりする場合は公共の場所（空港や駅、ホテルなど）のサービスを選んで接続する
+  - !ruby/object:Option
+    id: 3
+    content: 重要な情報をやりとりする場合は、場所に関わらずネットワークサービスの通信の暗号化等のセキュリティ対策が確認できているサービスを選んで接続する
+  - !ruby/object:Option
+    id: 4
+    content: PCでの接続は危険なので、スマートフォンかタブレット端末で接続するようにする
+- !ruby/object:Question
+  id: 2
+  content: 見覚えのないメールアドレスから、商品のURLが書かれた広告メールが配信されてきました。そのときの対応として最も望ましいものはどれでしょうか？
+  answer: 2
+  explain: "「配信停止の場合はメールを返信してください」と書かれていて、そのまま返信することで、メールアドレスが存在することを証明してしまうことになります。登録した覚えのあるメールマガジンなど以外は、そのまま削除するのが望ましいでしょう。"
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 必要のない商品であったため「配信停止の場合はメールを返信してください」と、書かれていたので、返信する
+  - !ruby/object:Option
+    id: 2
+    content: 見覚えがないので特に何もせず削除する
+  - !ruby/object:Option
+    id: 3
+    content: 必要のない商品であったため、配信先に電話をして、配信停止を申し入れる
+  - !ruby/object:Option
+    id: 4
+    content: メールに書かれているURLを試しにクリックしてみる
+- !ruby/object:Question
+  id: 3
+  content: ウイルス等への感染の恐れについて間違った理解は次のどれでしょうか？
+  answer: 3
+  explain: CDやDVDの書き込みの段階で感染している恐れがあります。また、追記型や書き換え可能型のCDやDVDもあるので、CD、DVDが必ず安全とは言えません。取引先や友人とCD、DVDでデータのやり取りをする場合は注意しましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 普段よく訪れるウェブサイトでも、ある日突然ウイルスなどが仕込まれる恐れがある
+  - !ruby/object:Option
+    id: 2
+    content: いつも通信している取引先からのメールでもウイルス感染している恐れがある
+  - !ruby/object:Option
+    id: 3
+    content: CDやDVDは後から変更できないのでウイルス感染の心配はない
+  - !ruby/object:Option
+    id: 4
+    content: 宣伝や勧誘のメールに書かれているURLを不用意にクリックするのは危険
+- !ruby/object:Question
+  id: 4
+  content: USBメモリを利用する際の注意点として、最も誤っているのは次のうちどれでしょうか？
+  answer: 3
+  explain: Windowsには、USBメモリを挿入するとファイルを自動再生する機能があります。この自動再生機能を悪用し、USBメモリからPCへ感染するタイプのウイルスが存在するため、感染予防対策として、Windowsの設定で自動再生機能を無効にしておきましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: カバンに入れて置き忘れたり、衣服のポケットに入れたまま気がつかずに紛失する可能性があるため、不必要なデータは格納しないよう気をつける
+  - !ruby/object:Option
+    id: 2
+    content: 出張先のホテルに設置されたPCや自宅の家族共有PCで使用したUSBメモリや、知人から譲りうけたUSBメモリには、ウイルス感染リスクがあることを認識し、不必要に利用しない
+  - !ruby/object:Option
+    id: 3
+    content: WindowsPCでUSBメモリを使って業務を行う際は、できるだけ素早く情報を利用したいので、Windowsの自動再生機能を有効にしておく
+  - !ruby/object:Option
+    id: 4
+    content: USBメモリをPCに挿した際に、見覚えのないファイルがUSBメモリ内にあるときは、ファイルを開かないようにする
+- !ruby/object:Question
+  id: 5
+  content: インターネットを安全に利用・閲覧するための考え方について、最も適切ではないものはどれでしょうか？
+  answer: 2
+  explain: インターネットはウイルス感染や個人情報漏えいに対する安全が保障されていないネットワークであり、ウイルス対策ソフトをインストールして、適切に運用していたとしても、ウイルス感染を100％防ぐことができるとは限りません。ウイルス感染や個人情報の漏えいを招くような行為は行わないようにしましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 信頼できないと思われるWebサイトの閲覧は避ける
+  - !ruby/object:Option
+    id: 2
+    content: ウイルス対策ソフトをインストールしていればWebサイトの閲覧は安全である
+  - !ruby/object:Option
+    id: 3
+    content: 必要以上に個人情報（氏名、住所、電話番号、クレジット番号等）を入力しないほうが良い
+  - !ruby/object:Option
+    id: 4
+    content: Webサイトから入手できるファイルをむやみにダウンロードしない
+- !ruby/object:Question
+  id: 6
+  content: 使用中のパソコンがウイルス感染した兆候であると思われる現象に最も該当しないものはどれでしょうか？
+  answer: 4
+  explain: '件名「Returned mail: see transcript for details」と書かれたメールは理由がありメールが送れなかった際の通知メールのため、ウイルス感染した兆候とは考えにくいでしょう。'
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 画面上に、奇妙なメッセージが表示された、または、音楽が流れた
+  - !ruby/object:Option
+    id: 2
+    content: システムの動作速度が遅くなった、または、途中で動かなくなった
+  - !ruby/object:Option
+    id: 3
+    content: 突然、フォルダの中のデータが消え始めた
+  - !ruby/object:Option
+    id: 4
+    content: '社外にメールを送信したところ「Returned mail: see transcript for details」という件名のメールが来た'
+- !ruby/object:Question
+  id: 7
+  content: 業務中に離席する場合の最も不適切な対応は次のどれでしょうか？
+  answer: 1
+  explain: 離席する場合は、他の人が画面を見たり、勝手に操作できないように、スクリーンセーバ（パスワード設定つき）やコンピュータのロックを必ず実施しましょう。
+    （クリアスクリーンポリシー：離席するときはパソコンの画面消し、他の人が操作できないよう、パスワード等でコンピュータにロックをかけること）
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 戻ったときにすぐに仕事を再開できるように、画面を開けたままにしておく
+  - !ruby/object:Option
+    id: 2
+    content: パスワードつきのスクリーンセーバを短時間で起動するように設定しておく
+  - !ruby/object:Option
+    id: 3
+    content: "｢コンピュータのロック｣を起動してロックをかける"
+  - !ruby/object:Option
+    id: 4
+    content: パソコンのディスプレイの電源スイッチをオフにしてから席を立つ（デスクトップパソコンの場合）
+- !ruby/object:Question
+  id: 8
+  content: スパイウエアの説明や対策について、適切でないものは次のうちどれでしょうか？
+  answer: 3
+  explain: スパイウェアは他人のPCに入り込み、知らぬ間に個人情報等を収集し、多くの場合第三者に送信したりします。重要なパスワードや情報などが漏えいする危険がありますので、スパイウエア対策ソフトなどが必要です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ブラウザの上部のツールバーが勝手に変更されてしまった場合は、スパイウエアによることも考えられる
+  - !ruby/object:Option
+    id: 2
+    content: フリーのソフトなどをインストールする場合は、スパイウエアの混入に注意が必要である
+  - !ruby/object:Option
+    id: 3
+    content: スパイウエアはウイルスなどに比べて、被害が大きくならないので、対策の必要性はあまりない
+  - !ruby/object:Option
+    id: 4
+    content: 使用者がキーボードから入力した文字の履歴や個人情報などが、スパイウエアにより収集されてしまうことがある
+- !ruby/object:Question
+  id: 9
+  content: 業務で重要情報にアクセスする際、社内の無線ネットワークにつながらない場合の利用について、適切なものはどれでしょうか？
+  answer: 3
+  explain: 会社貸与のPCから、会社のネットワークを回避して、許可なく社外のWi-Fiサービスや個人の機器（モバイルWi-Fiルータや、スマートフォン・タブレットによるテザリング等）を使用して接続する利用者がいます。これは、会社のルールやセキュリティ設定（Proxyなど）を回避することになり、ログ（履歴）が残らず、運用管理が十分にできなくなります。このような場合は、システム担当者や管理者に指示を仰ぐようにしましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 会社貸与のPCが社内ネットワークにつながらないので、つながりそうなWi-Fiを見つけてインターネット接続した
+  - !ruby/object:Option
+    id: 2
+    content: 会社貸与のPCが社内ネットワークにつながらないので、個人のポケットWi-Fiルータを使い接続した
+  - !ruby/object:Option
+    id: 3
+    content: 自分の会社貸与のPCが社内ネットワークにつながらないので、管理者の指示により、他のPCを使用した
+  - !ruby/object:Option
+    id: 4
+    content: 自分の会社貸与のPCが社内ネットワークにつながらないので、個人のスマートフォンで接続した
+- !ruby/object:Question
+  id: 10
+  content: 情報の入ったパソコンの廃棄方法として適切でないと思われるものはどれでしょうか？
+  answer: 1
+  explain: ゴミから拾われて情報が漏えいする危険性があるため廃棄時には情報を読み出せなくしておく必要があります。なお、ネクストでは廃棄の際は専門の業者に依頼していますので、まずは情報システムGに相談してください。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 特に何もせずに通常の廃棄物として処分する
+  - !ruby/object:Option
+    id: 2
+    content: 物理的に破壊し、データの読み取りを不可能にする
+  - !ruby/object:Option
+    id: 3
+    content: データ消去用ソフトを使用し、データを完全に消去した後、廃棄する
+  - !ruby/object:Option
+    id: 4
+    content: 専門の廃棄業者に依頼する
+- !ruby/object:Question
+  id: 11
+  content: インターネットを利用して情報収集をしていたところ突然「入会ありがとうございます。登録料を振り込んでください」というメッセージが表示されました。この場合の最も適切な対応はどれでしょうか？
+  answer: 4
+  explain: これは「架空請求」の典型的な手口です。このような身の覚えのない請求があった場合にはあわてずに無視しましょう。 また、クリックしただけでは一般的に入会の手続きとはなりません。（誤って入会した場合も、「電子消費者契約及び電子承諾通知に関する民法の特例に関する法律」により救済され可能性があります。）
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ただちに、指定された口座に指定された金額を入金する
+  - !ruby/object:Option
+    id: 2
+    content: 請求画面に表示されている、プロバイダのIPアドレスやホスト名が自分の利用しているものであるかどうかを確認してから、振込みをするかどうか判断する
+  - !ruby/object:Option
+    id: 3
+    content: 利用状況や支払理由などを確認するために業者に連絡を取る
+  - !ruby/object:Option
+    id: 4
+    content: そのまま、何もしない
+- !ruby/object:Question
+  id: 12
+  content: 差出人や内容に心当たりがない添付ファイルつきメールが来た時の対処法として最も適切なものはどれでしょうか？
+  answer: 2
+  explain: 差出人や内容に心当たりがない場合は、添付ファイルも開かず、そのまま削除することが望ましいでしょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 内容を確認するために、直ちに添付ファイルをダブルクリックして起動する
+  - !ruby/object:Option
+    id: 2
+    content: 差出人にも心当たりがないため、メールごと削除する
+  - !ruby/object:Option
+    id: 3
+    content: ネットワークケーブル（LAN線）を抜いて添付ファイルを開けてみる
+  - !ruby/object:Option
+    id: 4
+    content: 直ちに上司に報告して上司の見ている前でファイルを開けてみる
+- !ruby/object:Question
+  id: 13
+  content: ネットカフェでインターネット利用する場合に間違った認識のものはどれでしょうか?
+  answer: 3
+  explain: キーロガーのような不正ソフトウェアがインストールされているPCでは、電子メールソフトを利用したメールであっても、メールアカウント、パスワード等が漏えいする危険性があります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 個人情報（名前、住所、クレジットカード番号等）を入力しない
+  - !ruby/object:Option
+    id: 2
+    content: インターネットバンキングは利用しない
+  - !ruby/object:Option
+    id: 3
+    content: 電子メールソフトを利用したメールのみ利用し、Webメールは利用しない
+  - !ruby/object:Option
+    id: 4
+    content: 帰る前には、必ず閲覧の履歴等を削除する
+- !ruby/object:Question
+  id: 14
+  content: 業務中のインターネット利用方法として、適切でないと思われるものはどれでしょうか?
+  answer: 3
+  explain: 業務用パソコンがウイルス感染した場合、社内ネットワークに感染が拡大するおそれがあるため、ウイルス対策は必須です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 業務で必要な情報を検索する
+  - !ruby/object:Option
+    id: 2
+    content: 会社から与えられたメールアドレスでのメール送受信を行う
+  - !ruby/object:Option
+    id: 3
+    content: 通信を早くするためにウイルス対策ソフトを止めて利用する
+  - !ruby/object:Option
+    id: 4
+    content: SSL対応（httpsや鍵マークの表示）されていないサイトでは、機密情報や個人情報を入力しない
+- !ruby/object:Question
+  id: 15
+  content: あなたは転職することになりました。会社を退職する際にしてはいけないことはどれでしょうか?
+  answer: 2
+  explain: 業務時間中に作成したデータなどは、会社の著作物となるので、持ち帰り、次の会社で使用することはできません。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 取引先や顧客、自分の名刺を上司に渡す
+  - !ruby/object:Option
+    id: 2
+    content: 業務で自分が作ったデータは自分のものなので持ち帰る
+  - !ruby/object:Option
+    id: 3
+    content: 自宅のパソコンで業務をしたデータが残っていないかを確認し、残っていたら削除する
+  - !ruby/object:Option
+    id: 4
+    content: 取引先・関係者に後任者を紹介する
+- !ruby/object:Question
+  id: 16
+  content: 適切なログイン設定がされているノートパソコンが盗難にあった場合、最も情報漏えいの危険性が低いと考えられる状態はどれでしょうか？
+  answer: 3
+  explain: たとえログインができない場合でも、内蔵ハードディスクを外して別のパソコンに接続することによりデータへのアクセスが可能となることがあります。データそのものを暗号化しておくことにより、ハードディスクからのデータの読み出しを困難にすることができます。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 完全にシャットダウンしてあった
+  - !ruby/object:Option
+    id: 2
+    content: 直ぐに仕事ができるよう、スタンバイ状態にしてあった
+  - !ruby/object:Option
+    id: 3
+    content: 完全にシャットダウンしてあり、ハードディスクは暗号化してあった
+  - !ruby/object:Option
+    id: 4
+    content: 直ぐに仕事ができるよう電源を入れたままスクリーンロックが掛けられていた
+- !ruby/object:Question
+  id: 17
+  content: 社内ネットワークに繋いでいるパソコンが、ウイルスに感染したと思われる時の行動として最も適切でないものはどれでしょうか？
+  answer: 4
+  explain: データが既にウイルスに感染している可能性があるため、パソコンのデータを共有ドライブにバックアップすることはウイルス感染を広げる恐れがあります
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ネットワークケーブルを抜き、ウイルスに感染したパソコンをネットワークから切り離す
+  - !ruby/object:Option
+    id: 2
+    content: ウイルス感染の原因を特定するために電源は切らないでおく
+  - !ruby/object:Option
+    id: 3
+    content: 情報システムGなどネットワーク管理者に連絡する
+  - !ruby/object:Option
+    id: 4
+    content: 作りかけの資料があったので、パソコン内のデータを社内ネットワーク内の共有サーバ上にバックアップとして保存する
+- !ruby/object:Question
+  id: 18
+  content: Wi-Fiはその利便性の一方、無防備に利用していると、情報漏えいなどの原因になってしまいます。Wi-Fiのセキュリティ向上に役立たないものはどれでしょうか？
+  answer: 4
+  explain: Wi-Fiは配線不要のため、場所を選ばす利用でき大変便利ですが、外部に漏れた電波により、オフィス外からもアクセス可能になってしまいます。暗号化等のセキュリティ対策は必ず行いましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: データの暗号化を行う（WEP、WPA等）
+  - !ruby/object:Option
+    id: 2
+    content: WiFiアクセスポイントに接続できるPCを制限する（MACアドレスフィルタリング）
+  - !ruby/object:Option
+    id: 3
+    content: WiFiアクセスポイントのIDを通知しない  （ステルス機能）
+  - !ruby/object:Option
+    id: 4
+    content: 電波強度を上げる（ハイパワーアンテナ）
+- !ruby/object:Question
+  id: 19
+  content: HTMLメールについての認識で誤っているものはどれでしょうか？
+  answer: 3
+  explain: HTMLメール送信者は、HTMLに埋め込まれた画像にアクセスされたかどうかなどの情報から、相手がメールを開いたかどうか知ることができる場合もありますが、「必ず」ではありません。また、HTMLメールでは、メール本文に表示されたURLとは異なるリンク先が指定されている場合があるので注意が必要です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: HTMLメールは、メール受信者の環境によっては画像が表示されない場合もある
+  - !ruby/object:Option
+    id: 2
+    content: HTMLメールは、画像にウイルスが混入する場合もあるので注意が必要である
+  - !ruby/object:Option
+    id: 3
+    content: HTMLメール送信者は、相手がメールを開いたかどうか必ず知ることができるので注意が必要である
+  - !ruby/object:Option
+    id: 4
+    content: HTMLメールでは、表示されたURLとは異なるURLにリンクされている場合がある
+- !ruby/object:Question
+  id: 20
+  content: ホームページを閲覧していたら、「ウイルスに感染しました。」とポップアップが表示され、さらに、「ウイルスを削除するために指定されたURLのウイルス対策ソフトをインストールしてください。」と表示されました。このときの対応として適切でないものはどれでしょうか？
+  answer: 1
+  explain: 偽ウイルス対策ソフトの典型です。また、システムのパフォーマンスを向上させるような文言でインストールを促すウイルスもあります。このような偽ソフトをインストールしないようご注意ください。判断がつかない場合には、システム管理者に確認しましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: メッセージ通り指定されたウイルス対策ソフトをインストールし、ウイルススキャンする
+  - !ruby/object:Option
+    id: 2
+    content: 無視する
+  - !ruby/object:Option
+    id: 3
+    content: どうすればよいかわからないため、システム管理者に問い合わせる
+  - !ruby/object:Option
+    id: 4
+    content: 既存のウイルス対策ソフトでウイルススキャンする
+- !ruby/object:Question
+  id: 21
+  content: ファイル交換ソフトの情報漏えい対策で、セキュリティ上最も適切なのはどれでしょうか？
+  answer: 2
+  explain: 情報漏えい防止には、ファイル交換ソフトを利用しないのが、一番の対策です。利用した場合、ウイルス感染等により、知らぬ間にファイルが公開されてしまったり、著作権侵害等の危険にさらされます。個人のPCに利用した場合にも、プライベートな情報漏えいの危険性はあるので充分注意しましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ファイル交換ソフトで取得したファイルは、ウイルスに感染している場合があるので、ウイルス対策ソフトを利用することが必須である
+  - !ruby/object:Option
+    id: 2
+    content: 業務で使用するパソコンにはファイル交換ソフトをインストールしない
+  - !ruby/object:Option
+    id: 3
+    content: PC本体ではなく、外付けのUSBメモリーなどを利用することにより、ファイル交換ソフトによる情報漏えいの防止が可能である
+  - !ruby/object:Option
+    id: 4
+    content: ファイル交換ソフトで情報漏えいした場合でも、一時的な漏えいなので、対策は必要でない
+- !ruby/object:Question
+  id: 22
+  content: ウイルスやスパイウェアの知識に関して、誤っているものはどれでしょうか？
+  answer: 3
+  explain: ソフトウェアベンダーが提供するソフトの中にも、ユーザの利用状況等を収集するソフトがあります。 インストール時には、利用条件、使用許諾などを、熟読・理解し、利用するようにしたほうがよいでしょう。また、ウイルス対策ソフトを使用して定期的にPCをスキャンすることをお勧めします。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: スパイウェアやウイルスなど悪意のあるソフトウェアをマルウェアと呼ぶ
+  - !ruby/object:Option
+    id: 2
+    content: スパイウェアは、知らないうちに勝手にPCにインストールされ、PC内部の秘密情報などを収集する
+  - !ruby/object:Option
+    id: 3
+    content: ソフトウェアベンダーが提供するソフトが、ユーザの利用状況等の収集を行う事は無い
+  - !ruby/object:Option
+    id: 4
+    content: 電子メールやホームページの閲覧で、コンピュータウイルスに感染する場合がある
+- !ruby/object:Question
+  id: 23
+  content: 重要な情報が入ったデータファイルが漏えいする危険を避けるための方法として、最も適切でないものはどれでしょうか？
+  answer: 1
+  explain: バックアップを取ることはデータ消失の対策として有効ですが、情報漏えい対策にはなりません。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: バックアップデータを作成し、インターネット上のストレージに保管しておく
+  - !ruby/object:Option
+    id: 2
+    content: ファイルを暗号化する
+  - !ruby/object:Option
+    id: 3
+    content: ファイル交換ソフト（Winny等）を使用しない
+  - !ruby/object:Option
+    id: 4
+    content: ウイルス対策ソフトの導入をする
+- !ruby/object:Question
+  id: 24
+  content: ウイルス対策ソフトの使用方法で最も適切でないと思われるものはどれでしょうか？
+  answer: 2
+  explain: ファイルのダウンロード以外でもウイルスが侵入してくる可能性があります
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ウイルス定義ファイルの更新が自動的に行われるように設定する
+  - !ruby/object:Option
+    id: 2
+    content: PCの負荷を減らすため、ファイルをダウンロードする時以外は無効にしておく
+  - !ruby/object:Option
+    id: 3
+    content: 常にウイルス対策ソフトが作動するように、設定をする
+  - !ruby/object:Option
+    id: 4
+    content: 会社から指定されたウイルス対策ソフトを使用する
+- !ruby/object:Question
+  id: 25
+  content: 会社から貸与されているPC、スマートデバイス、携帯等を紛失した際に、最初に取るべき行動に該当しないものはどれでしょうか？
+  answer: 4
+  explain: 紛失している期間中に機密情報を含むメールを受信している可能性があります。また会社貸与物は会社資産のため、紛失を届け出る義務があります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 紛失した旨を上長に連絡し、判断を仰ぐ
+  - !ruby/object:Option
+    id: 2
+    content: 紛失した機器が通信機能を持っているので、通信会社に紛失した旨を連絡し、その後の通信停止を依頼する
+  - !ruby/object:Option
+    id: 3
+    content: 警察や、紛失したと思われる場所に連絡し、紛失したものが届いていないか確認する
+  - !ruby/object:Option
+    id: 4
+    content: ロック機能が設定されており、クライアントの連絡先もイニシャルで登録されているため、特に連絡しない
+- !ruby/object:Question
+  id: 26
+  content: 自宅の個人所有ＰＣで業務を行うのは危険だといわれますが、その理由として適切でないのは次のうちどれでしょうか？
+  answer: 3
+  explain: 個人所有のPCは当然ながら会社が管理するものではありません。したがって、万が一自宅PCで作業を行っている間にPCの故障が発生しても会社がその責任を負うことはありません。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 自宅が空き巣に入られＰＣが盗まれる恐れがあるから
+  - !ruby/object:Option
+    id: 2
+    content: 自宅ＰＣがコンピュータウイルスに感染し、情報が流出あるいは破壊される恐れがあるから
+  - !ruby/object:Option
+    id: 3
+    content: 自宅ＰＣが故障した場合、その責任を会社が負わなければならないから
+  - !ruby/object:Option
+    id: 4
+    content: 同居している家族に情報を見られてしまう恐れがあるから
+- !ruby/object:Question
+  id: 27
+  content: パスワード生成方法（決め方）で、最も適切なものはどれでしょうか。
+  answer: 3
+  explain: 家族の名前や生年月日など簡単に推測できるパスワードの場合は、推測され悪用される危険性があります。同様に、同じパスワードを使い回ししていると、万が一知られてしまった場合に危険です。パスワードは推察されにくい文字列を使用し、定期的に変更するように心がけましょう。
+    サイボウズには自動的にランダムにパスワードを生成するツール（暗号化キー（password）生成ツール）があり、これを活用することを推奨します。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 家族の名前、生年月日など忘れないようなパスワードにする
+  - !ruby/object:Option
+    id: 2
+    content: Webブラウザ上で入力したパスワードはオートコンプリート機能により記憶させておく
+  - !ruby/object:Option
+    id: 3
+    content: 一見無作為に思える文字の羅列をパスワードに採用する
+  - !ruby/object:Option
+    id: 4
+    content: 個人の情報をベースとすると類推されやすいので、好きな言葉をパスワードに選ぶ
+- !ruby/object:Question
+  id: 28
+  content: データを暗号化することによって防ぐことのできるリスクはどれでしょうか？
+  answer: 3
+  explain: 暗号化の目的は、第三者にデータを見られてもわからないようにするためのものです。ソーシャルエンジニアリング（盗み見、盗み聞き、話術などの手段で、パスワードなどの機密情報を入手すること）やDos攻撃に関しては暗号化によって防止できるリスクではありません。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 誤操作によるデータの削除
+  - !ruby/object:Option
+    id: 2
+    content: ソーシャルエンジニアリング
+  - !ruby/object:Option
+    id: 3
+    content: 通信内容の盗聴
+  - !ruby/object:Option
+    id: 4
+    content: データが保管されるサーバへのDoS攻撃
+- !ruby/object:Question
+  id: 29
+  content: 企業の資産を狙う標的型攻撃が頻発しています。標的型メールかどうかを疑うポイントとして、間違っているものはどれでしょうか？
+  answer: 3
+  explain: 標的型メールは、添付ファイルがあるとは限りません（URLのクリックを促す内容もあります）。近年、標的型メールは、差出人として実在の人物を詐称するなど、非常に巧妙化しています。
+    標的型メールによるウイルス感染の防止や、IDパスワードの窃取を防止するためには、設問選択肢のような小さな異常に気づくことがポイントになります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: メール本文の内容に心当たりがない
+  - !ruby/object:Option
+    id: 2
+    content: 送信元がフリーのメールアドレスである
+  - !ruby/object:Option
+    id: 3
+    content: 添付ファイルがついていない
+  - !ruby/object:Option
+    id: 4
+    content: 添付ファイルの内容が、メール本文と全く同じである
+- !ruby/object:Question
+  id: 30
+  content: ディジタル署名に関する記述のうち、適切なものはどれでしょうか？
+  answer: 2
+  explain: ディジタル署名は、主に「送信者が正しい」と「伝送経路上でデータが改ざんされていない」という目的で使用されます。データの盗聴自体は防止できませんが、データは暗号化されているので簡単に読むことはできません。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 署名付き文書の公開鍵を秘匿できる
+  - !ruby/object:Option
+    id: 2
+    content: データの改ざんが検知できる
+  - !ruby/object:Option
+    id: 3
+    content: データの盗聴が防止できる
+  - !ruby/object:Option
+    id: 4
+    content: 文書に関する自分の秘密鍵を圧縮して通信できる
+- !ruby/object:Question
+  id: 31
+  content: ある掲示板サイトの書き込みにっていたリンクをクリックしたところ、ファイルのダウンロードが始まりました。この場合、どうするのが良いでしょうか？
+  answer: 2
+  explain: 掲示板の書き込みには、不正なファイルをダウンロードさせようとしている書き込みもあるため、注意が必要です。よくわからないファイルはダウンロードしないようにしましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: ダウンロードして、パソコンに保存しておく
+  - !ruby/object:Option
+    id: 2
+    content: ダウンロードせず、キャンセルする
+  - !ruby/object:Option
+    id: 3
+    content: ダウンロードし、ファイルを実行する
+  - !ruby/object:Option
+    id: 4
+    content: ダウンロードし、内容を確認してもらうため、ファイルを同僚にも共有する
+- !ruby/object:Question
+  id: 32
+  content: スマートフォンのOSアップデートについて最も正しい考え方はどれでしょうか？
+  answer: 1
+  explain: 多くのアンドロイド携帯やiPhone/iPadは、パソコンや無線LAN経由でOSのアップデートを行います。定期的にスマートフォンをパソコンやインターネットに接続しOSのアップデートを実行してください。また、パソコンでアップデートを行う場合は最新版のアップデート実行ツールで行う必要があります。但し、OSのアップデートが出来ないスマートフォンの機種も存在しますので確認が必要です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: スマートフォンは定期的にパソコンやインターネットに接続してアップデートを行う
+  - !ruby/object:Option
+    id: 2
+    content: スマートフォンは自動的にOSをアップデートしてくれるので意識する必要はない
+  - !ruby/object:Option
+    id: 3
+    content: スマートフォンは特別なOSを使用しているのでアップデートする必要がない
+  - !ruby/object:Option
+    id: 4
+    content: スマートフォンはパソコンと違いOSが無いのでバージョンアップする必要はない
+- !ruby/object:Question
+  id: 33
+  content: 普段の会社での行動でセキュリティの低下につながるものはどれでしょうか？
+  answer: 3
+  explain: たとえ桁数を増やしたとしてもパスワードは辞書にあるような意味のある言葉で作ってはいけません。辞書攻撃により破られる危険が高くなります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: エレベーターでの私語は慎む
+  - !ruby/object:Option
+    id: 2
+    content: 離席時にはパソコンの画面をロックする
+  - !ruby/object:Option
+    id: 3
+    content: パスワードを辞書にある言葉で組み合わせて１２桁にする
+  - !ruby/object:Option
+    id: 4
+    content: 机の上を整理整頓する
+- !ruby/object:Question
+  id: 34
+  content: パソコンがウイルスに感染する原因として最も考えにくいものはどれでしょうか？
+  answer: 4
+  explain: 市販されているパッケージソフトではウイルスが混入している可能性は低いと言えます。ファイルのダウンロードだけでもウイルスが稼働する恐れがあります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: インターネットでファイルをダウンロードした
+  - !ruby/object:Option
+    id: 2
+    content: 友人から送られてきたメールの添付ファイルを開いた
+  - !ruby/object:Option
+    id: 3
+    content: 知らない人から送られてきたメールの添付ファイルを開いた
+  - !ruby/object:Option
+    id: 4
+    content: 市販されているパッケージソフトをインストールした
+- !ruby/object:Question
+  id: 35
+  content: 企業のITセキュリティを高める上で適切でない考え方はどれでしょうか？
+  answer: 2
+  explain: 自分が所属する組織のセキュリティは一人一人の意識の積み重ねで実現されます。 情報システム部や担当部門任せにせず、ルールを守り主体性を持って実行しましょう。
+    また知識の習得もセキュリティへの感応度を高めるためには有効です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 社員の一人としてルールは最低限守る必要がある
+  - !ruby/object:Option
+    id: 2
+    content: 情報システム部に任せておけば安心だ
+  - !ruby/object:Option
+    id: 3
+    content: 他の社員がルールを守っていない場合は、その旨を社内の適切な部署に連絡する
+  - !ruby/object:Option
+    id: 4
+    content: 新聞やWEB等でセキュリティの知識を勉強する
+- !ruby/object:Question
+  id: 36
+  content: パスワードや暗証番号を入力する際に気をつけなければいけませんが、誤った説明をしているものはどれでしょうか？
+  answer: 3
+  explain: パスワードや暗証番号を入力する際に背後から覗かれたり、指の動きでパスワードが特定されてしまう可能性があり、入力時に十分注意する必要があります。声を出しながら打ってしまってはパスワードが周りの人に特定されてしまうのでいい方法とはいえません。キーロガー対策になるソフトウェアキーボード（画面上に表示されたキーボード）を使える場合は、使用しましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 背後から画面を覗かれないように十分に注意する
+  - !ruby/object:Option
+    id: 2
+    content: タイプする指の動きを読まれないように打ち込む
+  - !ruby/object:Option
+    id: 3
+    content: パスワードを声に出しながら間違えないように打ち込む
+  - !ruby/object:Option
+    id: 4
+    content: ソフトウェアキーボードを使用する
+- !ruby/object:Question
+  id: 37
+  content: 写真データを加工する必要があり、フリーソフトで使いやすいものがあったので使うこととしました。使用する上で最も適切な方法はどれでしょうか？
+  answer: 3
+  explain: 出所の明確でないソフトにはウイルスが含まれるものやスパイウエアが仕掛けられている場合があるので、上長やシステム管理責任者に確認し安全なものを使うようにしましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 口コミサイトでの評判もよかったため自己判断でインストールし、使用後はアンインストールする
+  - !ruby/object:Option
+    id: 2
+    content: インストールするときはネットワークケーブル（LAN線）をはずして使う
+  - !ruby/object:Option
+    id: 3
+    content: 会社で使用禁止ソフトに指定されていないか、一般的に安全なソフトであるか確認してから使用する
+  - !ruby/object:Option
+    id: 4
+    content: 使い勝手がいいのでほかの人のＰＣにもインストールする
+- !ruby/object:Question
+  id: 38
+  content: ウイルス対策製品のウイルス定義ファイルはどれくらいの間隔で最新情報を確認するべきでしょうか?
+  answer: 1
+  explain: 日々新しいウイルスやマルウェアがインターネットでは検出されています。ウイルス定義ファイルを更新しなければ新しいウイルスやマルウェアを検出する事ができませんので、常に最新のウイルス定義ファイルを使用する必要があります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 常に最新を確認
+  - !ruby/object:Option
+    id: 2
+    content: 2-3 日に一度
+  - !ruby/object:Option
+    id: 3
+    content: 1 週間に一度
+  - !ruby/object:Option
+    id: 4
+    content: 2-3 週間に一度
+- !ruby/object:Question
+  id: 39
+  content: USBメモリによる業務データの持ち出しで最も適切でない行動は、次のうちどれでしょう？
+  answer: 1
+  explain: 私用で使っているUSBメモリで、安全性が確認できない不特定多数の場所で利用したことがある場合、ウィルス感染する可能性があります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 持ち歩くUSBメモリの数を減らすために、私用で使っているUSBメモリを利用する
+  - !ruby/object:Option
+    id: 2
+    content: データは、暗号化してから、USBメモリに入れる
+  - !ruby/object:Option
+    id: 3
+    content: データを持ち出す場合は、ルールを確認して許可が必要な場合は許可を得る
+  - !ruby/object:Option
+    id: 4
+    content: パスワードはUSBメモリのパスワードとわからないようにして持ち出す
+- !ruby/object:Question
+  id: 40
+  content: スパムメール（迷惑メール）の対応として、最も適切でないものはどれでしょうか？
+  answer: 3
+  explain: 送り主に返信すると、その電子メールアドレスが実存することが送信元に確認されることになりますので、逆効果になってしまいます。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: スパムメール予防として、掲示板やブログに自分のメールアドレスを不用意に書き込まない
+  - !ruby/object:Option
+    id: 2
+    content: 身に覚えがない請求メールが来た場合、支払いはせず、そのメールを無視する
+  - !ruby/object:Option
+    id: 3
+    content: スパムメールが来てしまったら、送り主に今後送らないように依頼の返信をする
+  - !ruby/object:Option
+    id: 4
+    content: チェーンメールを受信したが、スパムメールと判断してほかの人に転送しない
+- !ruby/object:Question
+  id: 41
+  content: パスワードは忘れやすいので、Ａさんは色々な工夫をして忘れないようにしています。このうち、やってはいけないものはどれでしょうか？
+  answer: 1
+  explain: 他人にすぐに知られてしまうパスワードの設定は禁物です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 自分の生年月日を利用したパスワードを設定する
+  - !ruby/object:Option
+    id: 2
+    content: 手帳の目立たないところに、パスワード関連とせずに、思い出すヒントを書いておく
+  - !ruby/object:Option
+    id: 3
+    content: パスワードを作るための分りやすい規則を自分で決めて覚えておき、その規則に従って、忘れてもすぐに導き出せるようにしておく
+  - !ruby/object:Option
+    id: 4
+    content: ペットが我が家に来た日とか、祖母の誕生日のように、他人が知る可能性は低いが自分はいつでも思い出せるようなデータを利用する
+- !ruby/object:Question
+  id: 42
+  content: 誤って知らない人からのメールの添付ファイルを開いてしまったところ、ウイルスに感染してしまいました。最初にとるべき行動はどれでしょうか？
+  answer: 2
+  explain: 知らない人からメールがきた場合、開かずに削除するのが鉄則ですが、万一、誤って開いてしまい、ウイルスに感染してしまった場合は直ちに情報システムGに連絡すると同時にネットワークケーブルを速やかに抜き、ウイルスの拡散を防ぎましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: そのメールを同僚に転送し、自分が感染したウイルスについて、知らせ注意喚起をする
+  - !ruby/object:Option
+    id: 2
+    content: ただちにネットワークケーブル（LAN線）を抜いて、情報システムGに連絡する。
+  - !ruby/object:Option
+    id: 3
+    content: メール送信者に苦情のメールを送る
+  - !ruby/object:Option
+    id: 4
+    content: どのような動きをするのか確認するため、そのまま様子をみる
+- !ruby/object:Question
+  id: 43
+  content: ファイルを開くパスワードを忘れてしまったので教えてほしいと電話がありました。 そのときの対応として望ましくないものはどれでしょうか？
+  answer: 4
+  explain: かかってきた電話でパスワードを答えるのは、なりすましの可能性があるので、その場で答えるのは避けた方が望ましいでしょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 折り返し電話する
+  - !ruby/object:Option
+    id: 2
+    content: メールで送る
+  - !ruby/object:Option
+    id: 3
+    content: 改めてパスワードを決めてから、ファイルを送りなおす
+  - !ruby/object:Option
+    id: 4
+    content: その場で答える
+- !ruby/object:Question
+  id: 44
+  content: 添付ファイル付きのメールを受信しました。差出人名がないため、送信者が不明ですが、内容やアドレスからは取引先からだと推測できます。その場合、最も適切な対応はどれでしょうか？
+  answer: 3
+  explain: 添付ファイルのみのメールなど不審なメールの場合は、送信者に確認を取ることが重要です。また、ウイルス感染などにより、送信元のアドレスが詐称されることもありますので、アドレスのみで安全だと判断するのは危険です。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 仕事をスムーズに進めるため、そのままファイルを確認する
+  - !ruby/object:Option
+    id: 2
+    content: 自分一人で確認するのは不安なため、同僚にそのまま転送し添付ファイルの中身を確認してもらう
+  - !ruby/object:Option
+    id: 3
+    content: 送信元の取引先に連絡を取り、ファイルを送信した事実を確認する
+  - !ruby/object:Option
+    id: 4
+    content: 差出人名もないため、スパムメールと判断し放っておく
+- !ruby/object:Question
+  id: 45
+  content: 執務室に見知らぬ人物を見かけた場合の対応として、最も適切なものはどれでしょうか？
+  answer: 1
+  explain: 執務室で見知らぬ人物や不審な人物を見かけた場合には、社員証やゲストバッジを確認するなどし、不審であろうとなかろうと担当部署に連絡するなどの対応が望ましいといえます。
+    挨拶や声をかけるなどして不審者の特定や不正行為への抑止を期待することもできますが、確実を期すためには正当な権限を示すものの提示を求める方が良いでしょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 社員証やゲストバッジなど入室権限を示すものを確認する
+  - !ruby/object:Option
+    id: 2
+    content: 不審者かどうかわからないので、とりあえず挨拶をしてみる
+  - !ruby/object:Option
+    id: 3
+    content: 不審な行動が見られる場合のみ、社内の担当部署に連絡する
+  - !ruby/object:Option
+    id: 4
+    content: 不審に感じたものの、声をかけると失礼なので、そのままにしておく
+- !ruby/object:Question
+  id: 46
+  content: 上司と新サービスの企画に関する相談をする場所として最も適切なところはどこでしょうか？
+  answer: 4
+  explain: 不特定の人が集まっている場所（電車内、エレベータ内、居酒屋等）で、仕事に関わる重要の情報について相談することは情報漏えいの原因となるので避けましょう。たとえ、オフィス内の喫煙ルームといえども、社内の他部署の人もいる可能性があるので、望ましくないでしょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 外出先での打合せ直後の移動中の交通機関内
+  - !ruby/object:Option
+    id: 2
+    content: 業務終了後に行った居酒屋
+  - !ruby/object:Option
+    id: 3
+    content: オフィスの喫煙ルーム
+  - !ruby/object:Option
+    id: 4
+    content: 執務室内にあるプロジェクトルーム
+- !ruby/object:Question
+  id: 47
+  content: メールアドレスを打ち間違えて、誤って違う人にメールを送信してしまいました。なお、メールを送信した相手には既にメールを削除してもらった事を確認しています。適切ではない対応はどれでしょうか?
+  answer: 4
+  explain: 本来は誰に送信する予定のメールだったか、誤送信してしまったメールにはどの様な内容が含まれていたのか等確認し、適切な対応と報告を行う必要があります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: いつ誤送信が発生したのか、誰に送信するはずのメールだったかを上長に報告する
+  - !ruby/object:Option
+    id: 2
+    content: 同様の事故が起きないように、事故について他部署のメンバーにも共有する
+  - !ruby/object:Option
+    id: 3
+    content: 再発防止策として、今後はメール送信前にダブルチェックを実施する
+  - !ruby/object:Option
+    id: 4
+    content: 既にメールは削除されており、その後、特に問題も発生していないので社内報告はせずに、誤送信した先方にのみ念のためお詫びのメールをお送りする
+- !ruby/object:Question
+  id: 48
+  content: コピー禁止の機密データを同僚がコピーしているところを偶然見つけました。最も適切な対応はどれでしょうか？
+  answer: 4
+  explain: 不正行為、あるいは不正行為の可能性があった場合にはその事実を報告するべきです。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 一言注意をしておくことで、後で問題が起きた場合でも自分に責任が及ばないようにする
+  - !ruby/object:Option
+    id: 2
+    content: 事情を確認したところ、納期に間に合わせるための仕方のない事情だったので黙認する
+  - !ruby/object:Option
+    id: 3
+    content: 事態をあらだてないように見なかったことにする
+  - !ruby/object:Option
+    id: 4
+    content: すみやかに事実を適切な管理者に報告する
+- !ruby/object:Question
+  id: 49
+  content: Web上の申し込みサイトで個人情報を入力する場合のセキュリティについて、誤った理解は次のうちどれでしょうか?
+  answer: 2
+  explain: 有名な企業のサイトでも改ざんや成りすましされている場合があるので、SSL通信（インターネットでやり取りする情報を、第三者による傍受から保護することを目的としたセキュリティ機能）になっているか（=ブラウザの錠マークが閉じているか）、画面上や通信上、紹介メール等に怪しい様子がないか、注意深く確認しましょう。
+    なお、https通信の場合でも、正式な電子証明書を取得しておらずなりすましをしている可能性はあります。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: https通信（URLがhttps://で始まっている）で錠マーク（Webブラウザのステータス欄にあるマーク）が閉じていれば、相手との暗号通信は確認されているので、一応は安心だ
+  - !ruby/object:Option
+    id: 2
+    content: 有名な企業のWebサイトは安全が確認されているので、セキュリティ上の心配はない
+  - !ruby/object:Option
+    id: 3
+    content: その企業のロゴが表示されているだけでは正規サイトとは確認できないので注意が必要だ
+  - !ruby/object:Option
+    id: 4
+    content: 入力した個人情報の相手先による保護については、Webに記載されている利用目的や個人情報保護方針で確認しておく必要がある
+- !ruby/object:Question
+  id: 50
+  content: 個人所有の携帯電話を紛失してしまいました。携帯電話には業務に関わる情報が保管されていました。携帯電話紛失後の行動として適切なものはどれでしょうか？
+  answer: 1
+  explain: 悪意ある人に拾われた場合には、会社の業務に関わる情報が悪用される可能性があります。そのため、個人の判断だけで済ませずに、会社の規定などに従い報告しましょう。
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: 社内のセキュリティポリシーを確認した上で、それに従う
+  - !ruby/object:Option
+    id: 2
+    content: 個人所有の携帯電話であるため、特に会社には報告しない
+  - !ruby/object:Option
+    id: 3
+    content: 後日、関係する人にのみに、携帯電話を紛失したことを連絡しする
+  - !ruby/object:Option
+    id: 4
+    content: 特に報告はせず、携帯電話を解約し、新たに携帯電話を購入する

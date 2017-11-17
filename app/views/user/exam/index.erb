@@ -1,0 +1,85 @@
+<div class="exam-header row">
+    <div class="box-body">
+        <div class="col-md-4">
+            <img class="logo exam-logo" src="/public/images/logo.svg" alt="LIFULL">
+        </div>
+        <div class="col-md-8">
+            <div class="pull-right">
+                <%= @user_data['fullname']%> (<a href="/logout"><%=t 'txt-logout', locale: get_locale %></a>)
+                <a href="/set-language/vi" class="btn btn-flag <% if @locale == 'vi' %>current_lang<% end %>">
+                    <img src="/public/images/vi_flag.png" atl="Vietnamese"/>
+                </a>
+                <a href="/set-language/ja" class="btn btn-flag <% if @locale == 'ja' %>current_lang<% end %>">
+                    <img src="/public/images/jp_flag.png" atl="Japanese"/>
+                </a>
+                <a href="/set-language/en" class="btn btn-flag <% if @locale == 'en' %>current_lang<% end %>">
+                    <img src="/public/images/en_flag.png" atl="English"/>
+                </a>
+                <a href="/set-language/es" class="btn btn-flag <% if @locale == 'es' %>current_lang<% end %>">
+                    <img src="/public/images/es_flag.png" atl="Spanish"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-process row">
+    <div class="col-md-9">
+        <div class="col-md-9">
+            <div class="progress progress-sm active">
+                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    <span class="percent_complete">0%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <span class="question_per">(<span id="total_answer">0</span>/<%= @total_question%>)</span>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="question-wrapper">
+        <div class="exam">
+            <% if @questions != nil %>
+            <form role="form" action="/exam/answer" method="post" id="frmQuestion">
+            <input type="hidden" name="is_again" value="<%= @is_again%>"/>
+            <% i = 0 %>
+                <% @questions.each do |question|%>
+                    <div class="setup-content" id="question-<%= question.id %>">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"><b>(<%= question.id %>)</b> <%= question.content %></h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="form-group">
+                                <% question.options.each do |option|%>
+                                    <div class="radio">
+                                        <label>
+                                            <input required="required" name="q[<%= question.id %>]" type="radio" value="<%= option.id %>"/> <%= option.content %>
+                                        </label>
+                                    </div>
+                                <% end %>
+                            </div>
+                        </div>
+                        <div class="box-footer text-center">                            
+                            <% if i > 0 %>
+                            <button class="btn btn-default prevBtn btn-md" type="button" ><%=t 'btn-prev', locale: get_locale %></button>
+                            <% end %>
+                            <% if i == (@questions.length - 1) %>
+                            <button class="btn btn-primary nextBtn btn-md" type="button" ><%=t 'btn-submit', locale: get_locale %></button>
+                            <% else %>
+                            <button class="btn btn-primary nextBtn btn-md" type="button" ><%=t 'btn-next', locale: get_locale %></button>
+                            <% end %>
+                        </div>                        
+                    </div>
+                    <% i += 1 %>
+                <% end %>
+            </form>
+            <% end %>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var total_answer = <%= @total_answer%>;
+    total_answer = total_answer + 1;
+    var total_question = <%= @total_question%>;
+</script>
+<script type="text/javascript" src="/public/js/questions.js"></script>

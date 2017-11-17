@@ -1,0 +1,53 @@
+en:
+  message-welcome: '<h1>This is security exam</h1>
+                    <p class="text-muted">If you want to join our projects, you must pass the exam with over 40 points</p>
+                    <p>Please choose your language and provide some information.</p>
+                    <p>Good luck!</p>'
+  btn-prev: Previous
+  btn-next: Next
+  btn-submit: Submit
+  btn-finish: Finish
+  btn-again: Again
+  txt-logout: Logout
+  user-header: User Information
+  fullname: Full Name
+  company-name: Company Name
+  project-name: Project Name
+  result-fail: You haven't passed the test. Please try again.
+  result-passed: Congratulation. You are passed.
+  result-point: Point
+  txt-congratulation: Congratulation! You are passed.
+  error:
+    fullname-require: Full name is required.
+  admin:
+    btn-add: Add
+    btn-edit: Edit
+    btn-delete: Delete
+    btn-detail: Detail
+    btn-cancel: Cancel
+    btn-save: Save
+    btn-close: Close
+    qs-lbl-list: Question list
+    qs-content: Content
+    qs-answer: Correct option
+    qs-explain: Explain 
+    qs-options: Options
+    txt-delete-title: Delete question
+    txt-delete-confirm: Are you sure?
+    table-sProcessing:   Processing...
+    table-sLengthMenu:   Show _MENU_ entries
+    table-sZeroRecords:  No matching records found
+    table-sInfo:         Showing _START_ to _END_ of _TOTAL_ entries
+    table-sInfoEmpty:    Showing 0 to 0 of 0 entries
+    table-sInfoFiltered: (filtered from _MAX_ total entries)
+    table-sInfoPostFix:  ""
+    table-sSearch:       "Search:"
+    table-sUrl: ""
+    table-sFirst:    First
+    table-sPrevious: Previous
+    table-sNext:     Next
+    table-sLast:     Last
+    error-content-required: Please enter the question content.
+    error-option-required: Please enter the option content.
+    error-answer-required: Please choose the correct question.
+    error-explain-required: Please enter the explain content.

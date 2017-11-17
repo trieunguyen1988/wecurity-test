@@ -1,0 +1,53 @@
+vi:
+  message-welcome: '<h1>Kiểm tra bảo mật</h1>
+                    <p class="text-muted">Để có thể tham gia vào những dự án sắp tới, bạn cần đạt được 40 điểm để vượt qua kỳ kiểm tra này.</p>
+                    <p>Hãy chọn ngôn ngữ của bạn và cung cấp thông tin bên dưới.</p>
+                    <p>Chúc may mắn</p>'
+  btn-prev: Trước
+  btn-next: Tiếp
+  btn-submit: Gửi
+  btn-finish: Hoàn Thành
+  btn-again: Làm lại những câu sai
+  txt-logout: Đăng xuất
+  user-header: Nhập thông tin của bạn  
+  fullname: Họ Tên
+  company-name: Tên Công ty
+  project-name: Tên dự án
+  result-fail: Bạn chưa đủ điểm để vượt qua kỳ kiểm tra này. Hãy thực hiện lại.
+  result-passed: Chúc mừng bạn đã vượt qua kỳ kiểm tra.
+  result-point: Điểm
+  txt-congratulation: Chúc mừng! Bạn đã vượt qua kỳ kiểm tra.
+  error:
+    fullname-require: Vui lòng nhập họ tên
+  admin:
+    btn-add: Thêm mới
+    btn-edit: Sửa
+    btn-delete: Xóa
+    btn-detail: Chi tiết
+    btn-cancel: Bỏ qua & Quay về
+    btn-save: Lưu
+    btn-close: Đóng
+    qs-lbl-list: Danh sách câu hỏi
+    qs-content: Nội dung
+    qs-answer: Câu trả lời đúng
+    qs-explain: Giải thích
+    qs-options: Danh sách lựa chọn
+    txt-delete-title: Xóa câu hỏi
+    txt-delete-confirm: Bạn có chắn chắn muốn xóa câu hỏi này không?
+    table-sProcessing:   Đang xử lý...
+    table-sLengthMenu:   Xem _MENU_ mục
+    table-sZeroRecords:  Không tìm thấy dòng nào phù hợp
+    table-sInfo:         Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục
+    table-sInfoEmpty:    Đang xem 0 đến 0 trong tổng số 0 mục
+    table-sInfoFiltered: (được lọc từ _MAX_ mục)
+    table-sInfoPostFix:  ""
+    table-sSearch:       "Tìm:"
+    table-sUrl: ""
+    table-sFirst:    Đầu
+    table-sPrevious: Trước
+    table-sNext:     Tiếp
+    table-sLast:     Cuối
+    error-content-required: Vui lòng nhập nội dung câu hỏi.
+    error-option-required: Vui lòng nhập nội dung câu trả lời.
+    error-answer-required: Vui lòng chọn câu trả lời đúng.
+    error-explain-required: Vui lòng nhập nội dung giải thích.

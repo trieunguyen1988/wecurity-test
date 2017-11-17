@@ -1,0 +1,76 @@
+<div class="col-md-12">
+    <div class="question-wrapper">
+        <div class="home">
+            <div class="row">
+
+                <div class="col-md-5 col-md-push-7">
+                    <img class="logo center-block" src="<%= url("/images/logo.svg")%>" alt="LIFULL">
+                </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <h1>This is security exam</h1>
+                    <p class="text-muted">If you want to join our projects, you must pass the exam with over 40 points</p>
+                    <p>Please choose your language and provide some information.</p>
+                    <p>Good luck!</p>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <a href="/set-language/vi">
+                        <img src="<%= url("/images/vi_flag.png")%>" atl="Vietnamese"/>
+                    </a>
+                    <a href="/set-language/ja">
+                        <img src="<%= url("/images/jp_flag.png")%>" atl="Japanese"/>
+                    </a>
+                    <a href="/set-language/en">
+                        <img src="<%= url("/images/en_flag.png")%>" atl="English"/>
+                    </a>
+                    <a href="/set-language/es">
+                        <img src="<%= url("/images/es_flag.png")%>" atl="Spanish"/>
+                    </a>
+                    <%=t 'btn-next', locale: get_locale %>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="box-user-info">
+                        <div class="col-md-6 box box-warning">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><%=t 'user-header', locale: get_locale %></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <!-- form start -->
+                            <form class="form-horizontal">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="name" class="col-sm-3 control-label"><%=t 'fullname', locale: get_locale %></label>
+
+                                        <div class="col-sm-9">
+                                        <input required="required" type="text" class="form-control" id="name" placeholder="<%=t 'fullname', locale: get_locale %>">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="company" class="col-sm-3 control-label"><%=t 'company-name', locale: get_locale %></label>
+
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="company" placeholder="<%=t 'company-name', locale: get_locale %>">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="project" class="col-sm-3 control-label"><%=t 'project-name', locale: get_locale %></label>
+
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="project" placeholder="<%=t 'project-name', locale: get_locale %>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer text-center">
+                                    <button type="submit" class="btn btn-warning"><%=t 'btn-submit', locale: get_locale %></button>
+                                </div>
+                                <!-- /.box-footer -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

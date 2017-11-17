@@ -1,0 +1,1181 @@
+---
+questions:
+- !ruby/object:Question
+  id: 1
+  content: Đâu là đáp án thích hợp khi kết nối network bên ngoài công ty
+  answer: 3
+  explain: Khi kết nối bằng mạng bên ngoài sẽ có khả năng bị nghe lén dữ liệu. Nếu
+    chỉ file được bảo vệ không thôi thì bạn vẫn có thể bị nghe lén các thông tin quan
+    trọng như ID, password. Trường hợp cần xử lý các thông tin quan trọng, hãy sử
+    dụng dịch vụ được cung cấp đầy đủ chức năng bảo mật như chức năng mã hóa truyền
+    tin (VPN) hay chức năng authen.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Dùng máy PC mượn của công ty, nếu file cần xử lý đã được bảo vệ bằng
+      cách mã hóa rồi thì có kết nối vào dịch vụ net nào cũng OK
+  - !ruby/object:Option
+    id: 2
+    content: Vi trong số các dịch vụ network cũng có những điểm truy cập đáng ngờ,
+      nên nếu xử lý các thông tin quan trọng thì nên chọn dịch vụ của những điểm công
+      cộng để kết nối ( sân bay, nhà ga, khách sạn…)
+  - !ruby/object:Option
+    id: 3
+    content: Trường hợp xử lý các thông tin quan trọng, cần chọn dịch vụ có thể confirm
+      được các giải pháp security để kết nối ví dụ như mã hóa truyền tin dịch vụ network
+  - !ruby/object:Option
+    id: 4
+    content: Vì kết nối bằng PC rất nguy hiểm nên thay vào đó sẽ kết nối bằng smartphone
+      hay tablet..
+- !ruby/object:Question
+  id: 2
+  content: Từ một địa chỉ email không quen thuộc  bạn nhận được mail quảng cáo chứa
+    URL của sản phẩm. Trong trường hợp đấy thì điều gì là đúng nhất trong số những
+    việc sau đây
+  answer: 2
+  explain: Nếu bạn thấy ghi là "Trường hợp muốn dừng việc gửi tin hãy trả lời mail
+    " và trả lời theo như được yêu cầu thì không khác nào chứng minh địa chỉ mail
+    của bạn là có thật. Ngoài e-mail đăng kí báo tạp chí bạn nhớ là đã đăng kí ra
+    thì hãy không làm gì cả mà cứ thế xóa mail đó đi.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Sản phẩm không cần thiết, vì được viết là "Trường hợp muốn dừng việc
+      gửi tin hãy trả lời mail "nên sẽ trả lời
+  - !ruby/object:Option
+    id: 2
+    content: Vì là địa chỉ mail không biết nên không làm gì hết và xóa đi
+  - !ruby/object:Option
+    id: 3
+    content: Vì là sản phẩm không cần thiết nên gọi điện thoại đến nơi gửi và yêu
+      cầu dừng việc gửi tin
+  - !ruby/object:Option
+    id: 4
+    content: Bạn thử Click vào URL chứa trong mail
+- !ruby/object:Question
+  id: 3
+  content: Về lo sợ sẽ bị nhiễm virut thì việc hiểu nhầm có thể là việc nào đưới đây
+  answer: 3
+  explain: Khi ghi đĩa CD hoặc DVD sẽ có nguy cơ nhiễm virus. Ngoài ra, có cả loại
+    CD, DVD có thể ghi thêm hay có thể ghi đè nên không thể khẳng định CD, DVD là
+    an toàn. Cần chú ý nếu muốn thao tác dữ liệu ở CD, DVD với bạn bè hay đối tác.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Lo sợ về việc là dù là website mình vẫn hay vào thì vẫn có khả năng bị
+      nhiễm vi rút bất ngờ
+  - !ruby/object:Option
+    id: 2
+    content: Lo sợ việc bị nhiễm virust từ mail cho dù là từ địa chỉ thường xuyên
+      gửi
+  - !ruby/object:Option
+    id: 3
+    content: Không cần lo lắng về việc bị  nhiễm virut vì CD hoặc DVD không thay đổi
+      được dữ liệu về sau
+  - !ruby/object:Option
+    id: 4
+    content: Việc click mà không chú ý vào những URL chứa trong mail để quảng cáo
+      là nguy hiểm
+- !ruby/object:Question
+  id: 4
+  content: Về điểm chú ý khi sử dụng USB, việc nhầm lẫn nhất có thể là việc gì trong
+    những việc dưới đây
+  answer: 3
+  explain: Ở Windows có chức năng khi insert bộ nhớ USB vào thì file sẽ tự động replay.
+    Do có loại virus lợi dụng chức năng replay tư động này để nhiễm virus từ USB sang
+    PC nên để phòng tránh nhiễm virus này cần tắt chức năng replay tự động trên Windows.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Vì có khả năng sẽ làm mất khi quên không cất vào cặp hay không chú ý
+      mà cho vào túi hay quần áo nên cẩn thận không lưu trữ những dữ liệu  không cần
+      thiết
+  - !ruby/object:Option
+    id: 2
+    content: USB được sử dụng ở PC mà trong gia đình nhiều người sử dụng; PC được
+      đặt ở khách sạn nơi công tác và USB nhận từ người quen thì phải xác nhận việc
+      có nguy cơ bị nhiễm virut hay không và không sử dụng khi không cần thiết
+  - !ruby/object:Option
+    id: 3
+    content: Trường hợp làm việc sử dụng USB bằng máy WindowsPC ,vì muốn sử dụng thông
+      tin càng sớm càng tốt nên sử dụng hiệu quả tính năng Auto Play của Windows
+  - !ruby/object:Option
+    id: 4
+    content: Trường hợp chuyển thông tin từ USB sang PC thì thì sẽ không mở  những
+      file không nhớ trong USB.
+- !ruby/object:Question
+  id: 5
+  content: Suy nghĩ về việc sử dụng thông tin một cách an toàn ở trên Internet thì  việc
+    gì dưới đây việc không đúng nhất
+  answer: 2
+  explain: Mạng Internet là mạng không được đảm bảo tính an toàn cho việc nhiễm virus
+    hay rò rỉ thông tin cá nhân. Dù bạn đã cài phần mềm chống virus và chạy phần mềm
+    1 cách thích hợp thì cũng không thể đảm bảo rằng có thể chống virus 100%. Hãy
+    tránh các hành vi có thể dẫn tới việc nhiễm virus hay dẫn tới việc rò rỉ thông
+    tin.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Tránh xa việc vào  những website nghĩ là không tin tưởng được
+  - !ruby/object:Option
+    id: 2
+    content: Chỉ cần install phần mềm đối phó với virut thì có thể an toàn vào các
+      website
+  - !ruby/object:Option
+    id: 3
+    content: Không nên nhập những thông tin cá nhân  hơn mức cần thiết ( tên, nơi
+      ở, số điện thoại, số credit card)
+  - !ruby/object:Option
+    id: 4
+    content: Không download  một cách không suy nghĩ những file mà mình có thể down
+      được từ website
+- !ruby/object:Question
+  id: 6
+  content: Trong khi sử dụng máy vi tính, với những hiện tượng nghĩ là dấu hiệu đã
+    bị nhiễm virut thì việc nào dưới đây là không đúng nhất
+  answer: 4
+  explain: Mail được trả lời với Title mail  「Returned mail :see transcript for details」
+    là có lý do, nó để thông báo mail bạn gửi không thành công. Không thể cho là dấu
+    hiệu của việc nhiễm virus được.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Trên màn hình, có những message lạ hoặc có tiếng nhạc.
+  - !ruby/object:Option
+    id: 2
+    content: Tốc độ những thao tác của hệ thống trở nên chậm hoặc xảy ra hiện tượng
+      đột nhiên ngừng hoạt động
+  - !ruby/object:Option
+    id: 3
+    content: Tự nhiên data trong folder bị biến mất
+  - !ruby/object:Option
+    id: 4
+    content: Khi gửi mail ngoài công ty, thì nhận được mail với tựa đề  「Returned
+      mail:see transcript for details」.
+- !ruby/object:Question
+  id: 7
+  content: Trường hợp khi bạn rời chỗ ngồi trong khi làm việc thì hành động nào tiếp
+    theo không đúng nhất
+  answer: 1
+  explain: Khi rời khỏi chỗ, để người khác không nhìn được màn hình hay tự ý thao
+    tác trên đó thì hãy để chế độ screen saver (có thiết định password) hay log computer.
+    (Clear screen policy :Khi rời khỏi chỗ phải tắt màn hình máy tính, để người khác
+    không thao tác trên đó được thì phải log máy tính)
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Để khi quay lại có thể bắt đầu lại công việc ngay nên mở nguyên màn hình
+  - !ruby/object:Option
+    id: 2
+    content: Thiết lập việc khởi động screeen saver kèm với đặt password trong thời
+      gian ngắn
+  - !ruby/object:Option
+    id: 3
+    content: Khởi động chế độ Log của computer để log PC
+  - !ruby/object:Option
+    id: 4
+    content: Sau khi  off nút nguồn điện display của PC thì mới đứng lên ( trường
+      hợp display PC)
+- !ruby/object:Question
+  id: 8
+  content: Về  việc giải thích về  Spyware thì việc nào không đúng dưới đây
+  answer: 3
+  explain: Spyware thâm nhập vào PC của người khác, trong lúc người đó không biết
+    sẽ thu thập thông tin cá nhân, và trong rất nhiều trường hợp sẽ gửi thông tin
+    cho bên thứ 3. Bạn sẽ có nguy cơ bị lộ password hay các thông tin quan trọng khác
+    nên cần phải có phần mềm chống spyware.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Trường hợp thanh công cụ ở trên cùng của browser đã bị tự ý thay đổi
+      thì suy nghĩ  có thể do spyware
+  - !ruby/object:Option
+    id: 2
+    content: Trong trường hợp install những phần mềm free thì cần phải chú ý việc
+      lẫn spyware
+  - !ruby/object:Option
+    id: 3
+    content: Spyware so với virut thì không gây nguy hại lắm nên không cần lo đối
+      sách
+  - !ruby/object:Option
+    id: 4
+    content: Đối với thông tin cá nhân và lịch sử dùng từ những keyword của người
+      sử dụng thì có thể có được bằng việc dùng spyware
+- !ruby/object:Question
+  id: 9
+  content: Khi truy cập vào các thông tin quan trọng phục vụ cho mục đích công việc,
+    đâu là phương án thích hợp trường hợp sử dụng mà không kết nối với mạng không
+    dây trong công ty?
+  answer: 3
+  explain: Cũng có người  mượn PC  của công ty không kết nối được network công ty,
+    và tự ý dùng dịch vụ Wi-Fi bên ngoài công ty hay dùng các thiết bị cá nhân ( như
+    mobile Wi-Fi hay bộ chia từ smartphone/tablet). Việc này sẽ tránh rule công ty
+    hay các thiết định bảo mật (ví dụ như Proxy), không để lại log (history), và việc
+    quản lý vận hành cũng không thể được đầy đủ. Trong những trường hợp như này, hãy
+    thỉnh giáo người quản lý hay người phụ trách hệ thống
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Vì PC mượn của công ty không kết nối  với network công ty, nên  bạn sẽ
+      kết nối internet với mạng Wifi nào thấy có thể kết nối được
+  - !ruby/object:Option
+    id: 2
+    content: Do PC mượn của công ty không kết nối với network công ty, nên bạn sẽ
+      sử dụng Wifi router bỏ túi của cá nhân
+  - !ruby/object:Option
+    id: 3
+    content: Do PC mượn của công ty không kết nối với network công ty nên bạn sẽ dùng
+      máy PC khác theo chỉ thị của người quản lý
+  - !ruby/object:Option
+    id: 4
+    content: Do PC mượn của công ty không kết nối với network công ty nên bạn sẽ kết
+      nối bằng smartphone cá nhân
+- !ruby/object:Question
+  id: 10
+  content: Về phương pháp loại bỏ những máy tính có chứa các thông tin thì việc nào
+    dưới đây là không đúng
+  answer: 1
+  explain: Nếu máy tính bỏ đi đó được nhặt về thì sẽ có nguy cơ bị rò rỉ thông tin
+    nên trước khi bỏ đi cần xử lý để thông tin trong đó không đọc được nữa. Ngoài
+    ra, ở Next khi loại bỏ máy tính sẽ nhờ bộ phận chuyên môn nên trước tiên hãy thảo
+    luận với bộ phận info system.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Không cần làm đặc biệt, chỉ cần xử lý loại bỏ  như những thông tin không
+      cần thiết thông thường.
+  - !ruby/object:Option
+    id: 2
+    content: Phá hủy một cách vật lý( đập, phá hủy…) để không thể đọc được data
+  - !ruby/object:Option
+    id: 3
+    content: Sử dụng phần mềm xóa dữ liệu, dữ liệu sau khi xóa hoàn toàn thì sẽ bị
+      hủy
+  - !ruby/object:Option
+    id: 4
+    content: Nhờ đến người xử lý hủy tài liệu chuyên nghiệp
+- !ruby/object:Question
+  id: 11
+  content: Trong khi thu thập thông tin sử dụng internet , đột nhiên hiển thị message
+    như là " Cảm ơn bạn đã gia nhập, Hãy chuyển khoản lệ phí gia nhập". Trường hợp
+    này thì việc gì là việc làm đúng nhất
+  answer: 4
+  explain: Đây là mánh khóe " yêu cầu thanh toán hư cấu" điển hình. Nếu gặp yêu cầu
+    thanh toán kiểu này thì bạn hãy lờ đi mà không cần phải lo lắng gì cả. Ngoài ra,
+    việc chỉ click vào không thôi thì không thể nào đã hoàn tất việc gia nhập được
+    cả. ( Kể cả trường hợp gia nhập nhầm, cũng có khả năng được trợ giúp nhờ vào "Đạo
+    luật về quy định đặc biệt của Bộ luật dân sự liên quan đến hợp đồng người tiêu
+    dùng điện từ và thông báo chấp nhận điện tử"
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Chuyển số tiền chỉ định vào tài khoản được chỉ định
+  - !ruby/object:Option
+    id: 2
+    content: Xác nhận lại tên máy chủ và địa chỉ nhà cung cấp hiện trên màn hình có
+      phải địa chỉ mình sử dụng hay không sau đó mới cân nhắc việc chuyển khoản
+  - !ruby/object:Option
+    id: 3
+    content: Liên lạc đến nhà cung cấp để xác nhận lại lý do việc trả tiền và trạng
+      thái sử dụng,
+  - !ruby/object:Option
+    id: 4
+    content: Để nguyên và không làm gì
+- !ruby/object:Question
+  id: 12
+  content: Khi có mail đính kèm file mà không rõ nội dung và người gửi thì phương
+    pháp đúng nhất là gì
+  answer: 2
+  explain: Khi nhận được mail mà không rõ nội dung và người gửi thì không được mở
+    file đính kèm mà cứ thế xóa đi.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Sau khi xác nhận nội dung thì  click 2 lần để mở file đính kèm trực tiếp
+  - !ruby/object:Option
+    id: 2
+    content: Vì không rõ nội dung  và người gửi nên là xóa mail đi
+  - !ruby/object:Option
+    id: 3
+    content: Rút dây mạng ( Mạng Lan) và thử mở file
+  - !ruby/object:Option
+    id: 4
+    content: Trưc tiếp báo cáo với cấp trên và mở file sao cho cấp trên xem được
+- !ruby/object:Question
+  id: 13
+  content: Trường hợp sử dụng internet ở netcaffe thì việc gì là việc gì có thể nhầm
+    lẫn trong những việc sau đây
+  answer: 3
+  explain: Ở những PC bị cài phần mềm gian lận như keylogger, thì dù là mail sử dụng
+    phần mềm mail điện tử cũng có nguy cơ bị rò rỉ mail account, password
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Không nhập những thông tin cá nhân ( tên, địa chỉ, số thẻ creditcard...)
+  - !ruby/object:Option
+    id: 2
+    content: Không sử dụng internetbanking
+  - !ruby/object:Option
+    id: 3
+    content: Chỉ sử dụng mail dùng email- software, không sử dụng web mail
+  - !ruby/object:Option
+    id: 4
+    content: Trước khi về thì phải xóa lịch sử xem
+- !ruby/object:Question
+  id: 14
+  content: Đối với phương pháp sử dụng internet trong công việc thì việc gì  là không
+    đúng
+  answer: 3
+  explain: Nếu máy tính dùng trong công việc mà bị nhiễm virus sẽ gây nguy cơ lan
+    rộng virus cho mạng công ty, vì vậy nhất thiết phải bật phần mềm chống virus.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Tìm kiếm những thông tin cần thiết trong công việc
+  - !ruby/object:Option
+    id: 2
+    content: Tiến hành việc nhận và gửi mail bằng địa chỉ Email nhận được từ công
+      ty
+  - !ruby/object:Option
+    id: 3
+    content: Để tăng tốc độ truyền thông thì dừng  phần mềm chống virut và sử dụng
+  - !ruby/object:Option
+    id: 4
+    content: Với những site không hỗ trợ SSL (biểu thị những dấu hiệu khóa hoặc https)
+      thì không nhập những thông tin cá nhân hoặc những thông tin cơ mật
+- !ruby/object:Question
+  id: 15
+  content: Khi bạn chuyển việc mới thì việc bạn không được làm là việc gì
+  answer: 2
+  explain: Data đã tạo trong thời gian làm việc là sản phẩm của công ty nên không
+    được mang về sử dụng cho công ty sau.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Đưa hết cho cấp trên danh thiếp bản thân, khách hàng và các nơi giao
+      dịch
+  - !ruby/object:Option
+    id: 2
+    content: Những data tạo ra khi làm việc là vật của bản thân mình nên mang đi
+  - !ruby/object:Option
+    id: 3
+    content: Xác nhận lại những data cho công việc có còn sót lại ở máy tính gia đình
+      không, nếu có thì xóa bỏ
+  - !ruby/object:Option
+    id: 4
+    content: Giới thiệu người kế nhiệm cho các đối tác và những người liên quan
+- !ruby/object:Question
+  id: 16
+  content: Trường hợp note PC đã được thiết lập login một cách thích hợp bị đánh cắp
+    thì trường hợp nào được cho là tính nguy hiểm việc bị rò rỉ thông tin là thấp
+    nhất
+  answer: 3
+  explain: Kể cả trường hợp không login được thì vẫn có thể tháo ổ cứng bên trong
+    và kết nối với máy tính khác để truy cập vào data. Nên nếu đã mã hóa cả data rồi
+    thì việc đọc data từ ổ cứng sẽ rất khó.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Đã hoàn thành việc shutdown
+  - !ruby/object:Option
+    id: 2
+    content: Ở trạng thái standby để có thể làm việc ngay.
+  - !ruby/object:Option
+    id: 3
+    content: Đã hoàn tất việc shutdown, hard disk đã được mã hóa.
+  - !ruby/object:Option
+    id: 4
+    content: Giữ nguyên nguồn điện để có thể làm việc được ngay và log screen
+- !ruby/object:Question
+  id: 17
+  content: PC đã được kết nối network trong công ty,đối với việc bạn nghĩ là có thể
+    bị nhiễm virut thì việc nào dưới đây không đúng nhất
+  answer: 4
+  explain: Do dữ liệu đã có khả năng bị nhiễm virus nên việc backup data máy tính
+    và save vào drive dùng chung sẽ gây nguy cơ lan rộng virus.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Tháo Network cable , ngắt kết nối mạng từ máy bị nhiễm virut
+  - !ruby/object:Option
+    id: 2
+    content: Để xác định nguyên nhân bị nhiễm virut nên không tắt nguồn điện
+  - !ruby/object:Option
+    id: 3
+    content: Liên lạc với người quản lý network và hệ thống thông tin
+  - !ruby/object:Option
+    id: 4
+    content: Vì có tài liệu đang làm nên back up data của máy tính lên server share
+      thông tin của network công ty và save lại
+- !ruby/object:Question
+  id: 18
+  content: Mặt khác của tính tiện lợi khi dùng Wi-Fi là nếu sử dụng mà không bảo vệ
+    thông tin thì sẽ trở thành nguyên nhân của việc rò rỉ thông tin. Việc gì không
+    tác dụng với việc nâng cao tính bảo mật của WIFI
+  answer: 4
+  explain: Do sóng Wi-Fi không cần dây nên có thể sử dụng mà ko cần chọn chỗ, rất
+    tiện lợi. Nhưng do sóng điện bị dò rỉ ra ngoài nên cả những người ngoài công ty
+    cũng có thể access vào được. Vì vậy, nhất thiết phải có các biện pháp security
+    ví dụ như mã hóa chẳng hạn.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Tiến hành mã hóa data ( WEP,WPA)
+  - !ruby/object:Option
+    id: 2
+    content: Hạn chế những PC có thể trực tiếp kết nối tới điểm truy cập WIFI( MAC
+      Address filtering)
+  - !ruby/object:Option
+    id: 3
+    content: Không thông bảo cho các ID của điểm access WIFI (tính năng stealth)
+  - !ruby/object:Option
+    id: 4
+    content: Tăng cường sóng truyền ( high-power antenna)
+- !ruby/object:Question
+  id: 19
+  content: Về  HTML mail điều gì là sai về mặt nhận thức
+  answer: 3
+  explain: Cũng có trường hợp người gửi mail HTML có thể biết người nhận đã mở mail
+    hay chưa dựa vào thông tin hình hảnh được nhúng trong HTML đã được access hay
+    chưa. Tuy nhiên, không phải là "chắc chắn" sẽ biết được. Ngoài ra, ở mail HTML
+    cũng có trường hợp URL được hiển thị ở trong mail được chỉ định đến địa chỉ link
+    khác nên cần phải chú ý.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: HTML mail  tùy thuộc vào môi trường nhận thông tin thì cũng có trường
+      hợp không hiển thị màn hình
+  - !ruby/object:Option
+    id: 2
+    content: HTML mail vì cũng có trường hợp lẫn virut từ màn hình nên cũng cần phải
+      chú ý
+  - !ruby/object:Option
+    id: 3
+    content: Người gửi  HTML mail, vì có thể biết được chắc chắn đối phương có nhận
+      được mail hay không, nên cẩn thiết phải chú ý
+  - !ruby/object:Option
+    id: 4
+    content: HTML mail , URL hiện thị thì cũng có trường hợp vào một URL khác
+- !ruby/object:Question
+  id: 20
+  content: Khi vào homepage, mà hiện thị pop- up  「Đã bị nhiễm virut 」, sau đó hiện
+    thị thêm 「Để diệt virut hãy install software ở URL chỉ đinh sau」. Trong trường
+    hợp đó việc gì là việc không thích hợp để đối phó trong số các việc dưới đây
+  answer: 1
+  explain: Đây là phần mềm diệt virus giả mạo điển hình. Ngoài ra, còn có loại virus
+    báo install để nâng cấp performance hệ thống. Các bạn cần chú ý không được install
+    phần mềm giả mạo kiểu này. Nếu mình không phán đoán được thì hãy đi xác nhận với
+    quản lý hệ thống.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Instal software  diệt virut được chỉ định ở message và diệt virut.
+  - !ruby/object:Option
+    id: 2
+    content: Không quan tâm
+  - !ruby/object:Option
+    id: 3
+    content: Không biết nên làm thế nào nên hẹn để trao đổi cùng người quản lý hệ
+      thống
+  - !ruby/object:Option
+    id: 4
+    content: Scan virut bằng software diệt virut đang có
+- !ruby/object:Question
+  id: 21
+  content: Bằng việc ngăn chặn rò rỉ thông tin của phần mềm trao đổi file, nếu xét
+    về tính bảo mật thì  việc gì là đúng nhất
+  answer: 2
+  explain: Để tránh rò rỉ thông tin thì giải pháp đầu tiên là không sử dụng phần mềm
+    trao đổi thông tin. Trường hợp đã sử dụng có thể sẽ bị nhiễm virus mà bạn không
+    biết, và file sẽ bị public ra ngoài, quyền tác giả sẽ có nguy cơ bị xâm hại. Kể
+    cả trường hợp sử dụng PC cá nhân, vẫn có nguy cơ bị lộ thông tin private nên các
+    bạn cần hết sức chú ý.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: File nhận được bằng phần mềm trao đổi file  thì vì có trường hợp bị nhiễm
+      virut nên việc sử dụng phần mềm diệt virut là bắt buộc
+  - !ruby/object:Option
+    id: 2
+    content: Không install phần mềm trao đổi file ở PC sử dụng trong công việc
+  - !ruby/object:Option
+    id: 3
+    content: Không phải là PC , so với việc sử dụng USB bên ngoài , thì sử dụng phần
+      mềm trao đổi file  vẫn có khả năng  bảo vệ rò rỉ thông tin
+  - !ruby/object:Option
+    id: 4
+    content: Dù có bị rò rỉ thông tin do phần mềm trao đổi file thì việc rò rỉ là
+      tạm thời nên việc đối phó là không cần thiết
+- !ruby/object:Question
+  id: 22
+  content: Liên quan đến kiến thức về virut và spyware, việc có thể bị nhầm lẫn là
+    việc nào
+  answer: 3
+  explain: Trong số các phần mềm mà Software vender cung cấp, cũng có phần mềm thu
+    thập tình trạng sử dụng của user.Khi install, cần đọc kĩ và hiểu điều kiện sử
+    dụng, điều kiện cấp phép trước rồi hãy sử dụng. Ngoài ra, Khuyến khích các bạn
+    dùng các phần mềm chống virus và scan PC định kì.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Spyware và virut là những phần mềm độc hại nên gọi là Malware
+  - !ruby/object:Option
+    id: 2
+    content: Spyware được install trên PC trong khi không để ý, và có thể thu thập
+      những thông tin bí mật trong PC
+  - !ruby/object:Option
+    id: 3
+    content: Software vendor là phần mềm cung cấp nên việc tiến hành thu thập những
+      trạng thái sử dụng của server là không có
+  - !ruby/object:Option
+    id: 4
+    content: Do việc vào xem các homepage hoặc email  mà máy tính có khả năng bị nhiễm
+      virut
+- !ruby/object:Question
+  id: 23
+  content: Về phương pháp tránh nguy cơ rò rỉ thông tin từ các file data chứa rất
+    nhiều thông tin quan trọng, thì việc gì là việc không đúng nhất
+  answer: 1
+  explain: Việc backup data chỉ giúp phòng tránh mất data chứ không có tác dụng ngăn
+    rò rỉ thông tin.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Tạo data back up, lưu giữ trên storage của internet
+  - !ruby/object:Option
+    id: 2
+    content: Mã hóa file
+  - !ruby/object:Option
+    id: 3
+    content: Không sử dụng phần mềm trao đổi file ( Winny)
+  - !ruby/object:Option
+    id: 4
+    content: Sử dụng thêm phần mềm diệt virut
+- !ruby/object:Question
+  id: 24
+  content: Trong các phương pháp sử dụng phần mềm diệt virut thì  việc gì là không
+    đúng nhất
+  answer: 2
+  explain: Khi không download file thì virus vẫn có khả năng xâm nhập
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Thiết lập việc tiến hành tự động update file thông tin về virut
+  - !ruby/object:Option
+    id: 2
+    content: Để giảm khối lượng trên PC. thì ngoài khi download các file thì không
+      sử dụng
+  - !ruby/object:Option
+    id: 3
+    content: Thiết lập để có thể  sử dụng phần mềm diệt virut một cách thông thường
+  - !ruby/object:Option
+    id: 4
+    content: Sử dụng phần mềm diệt virut mà công ty chỉ định
+- !ruby/object:Question
+  id: 25
+  content: Trong trường hợp đánh mất điện thoại, smart devices , PC mượn từ công ty,
+    trong số những việc nên làm đầu tiên thì việc gì là không đúng nhất
+  answer: 4
+  explain: Trong thời gian bị mất, có thể sẽ nhận được mail có chứa các thông tin
+    bảo mật. Ngoài ra, đồ mượn của công ty là tài sản công ty, nên bạn cần có nghĩa
+    vụ phải khai báo mất.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Liên lạc với cấp trên về việc bạn bị mất và hỏi ý kiến về phương án nên
+      làm
+  - !ruby/object:Option
+    id: 2
+    content: Vì mình giữ những tính năng thông tin của những đồ bị mất nên là liên
+      lạc với công ty cung cấp thông tin và nhờ dừng các hoạt động đó lại
+  - !ruby/object:Option
+    id: 3
+    content: Liên lạc đến nới bạn nghĩ là bị mất đồ, công an, xác định những đồ bị
+      mất có ở đó không
+  - !ruby/object:Option
+    id: 4
+    content: Vì đã thiết lập chức năng khóa, địa chỉ liên lạc khách hàng ban đầu cũng
+      được đăng kí, nên không cần liên lạc nữa
+- !ruby/object:Question
+  id: 26
+  content: Việc tiến hành công việc ở PC cá nhân mình ở nhà được cho là nguy hiểm,
+    trong số những lý do dưới đây thì lý do nào là không đúng
+  answer: 3
+  explain: Đương nhiên công ty không quản lý PC của cá nhân. Do đó, nếu trường hợp
+    chẳng may PC của bạn bị hỏng khi đang làm việc thì công ty cũng không chịu trách
+    nhiệm.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: VÌ lo lắng sẽ bị mất PC được để ở nhà
+  - !ruby/object:Option
+    id: 2
+    content: Lo lắng về nguy cơ máy tính ở nhà bị nhiễm virut , thông tin bị truyền
+      đi và bị phá hủy
+  - !ruby/object:Option
+    id: 3
+    content: Trong trường hợp máy tính ở nhà bị hỏng, thì vì công ty sẽ phải chịu
+      trách nhiệm
+  - !ruby/object:Option
+    id: 4
+    content: Lo lắng về việc những người cùng sống trong gia đình mình có thể xem
+      được các thông tin
+- !ruby/object:Question
+  id: 27
+  content: Trong các phương pháp để tạo password, phương pháp nào là đúng nhất trong
+    các phương pháp sau
+  answer: 3
+  explain: Trường hợp sử dụng password dễ đoán như tên gia đình, ngày tháng năm sinh
+    sẽ rất dễ bị đoán ra và sử dụng với mục đích xấu. Tương tự,nếu dùng lại cùng 1
+    password giống nhau, nếu chẳng may bị lộ thì sẽ rất nguy hiểm. Hãy chú ý dùng
+    những chuỗi kí tự khó phỏng đoán và nhớ update định kì.Ở Cybozu có tool tự động
+    gen password 1 cách ngẫu nhiên ( tool gen key mã hóa (password)), khuyến khích
+    mọi người dùng tool này.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Lấy password là tên gia đình hoặc ngày tháng năm sinh cho khó quên
+  - !ruby/object:Option
+    id: 2
+    content: Password nhập trên  Web browser, nhờ vào tính năng Auto Complate thì
+      có thể lưu giữ được
+  - !ruby/object:Option
+    id: 3
+    content: Sử dụng dãy kí tự có thể nghĩ ra một cách ngẫu nhiên để tạo password
+  - !ruby/object:Option
+    id: 4
+    content: VÌ dễ thấy điểm tương đồng khi lấy thông tin cá nhân là cơ sở nên sẽ
+      lựa chọn password là những từ mình thích
+- !ruby/object:Question
+  id: 28
+  content: Bằng việc mã hóa data, có thể đề phòng nguy cơ nào trong những nguy cơ
+    sau đây
+  answer: 3
+  explain: Mục đích của việc mã hóa là để người thứ 3 có nhìn được dữ liệu cũng không
+    biết. Nguy cơ Social engineering ( việc lấy thông tin bảo mật ví dụ như password
+    bằng cách nhìn trộm, nghe trộm, hay bằng nghệ thuật nói chuyện) hay việc tấn công
+    Dos  không thể phòng tránh nhờ vào việc mã hóa.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Xóa data do thao tác nhầm
+  - !ruby/object:Option
+    id: 2
+    content: Social engineering
+  - !ruby/object:Option
+    id: 3
+    content: Nghe trộm nội dung truyền tin
+  - !ruby/object:Option
+    id: 4
+    content: Sự tấn công của DoS vào server đang lưu data
+- !ruby/object:Question
+  id: 29
+  content: Đang thường xuyên xảy ra tấn công mục tiêu nhằm vào tài sản doanh nghiệp.
+    Trong số những point để nghi ngờ là email mục tiêu sau đây, thì đâu là phương
+    án sai?
+  answer: 3
+  explain: Mail mục tiêu không nhất thiết phải có file đính kèm (vì cũng có nội dung
+    mail yêu cầu click vào URL). Gần đây, mail mục tiêu rất tinh vi như giả danh người
+    nào đó có thật để gửi mail.Để phòng tránh nhiễm virus do mail mục tiêu hay phòng
+    tránh việc ăn cắp ID password, thì point là nhận ra những bất thường nhỏ  chẳng
+    hạn như các câu hỏi lựa chọn
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Bạn không biết gì về nội dung mail nhận được
+  - !ruby/object:Option
+    id: 2
+    content: Địa chỉ gửi mail là địa chỉ miến phí
+  - !ruby/object:Option
+    id: 3
+    content: Không có file đính kèm
+  - !ruby/object:Option
+    id: 4
+    content: Nội dung file đính kèm giống hệt nội dung mail
+- !ruby/object:Question
+  id: 30
+  content: Thông tin nào liên quan đên chữ kĩ điện tử là chính xác?
+  answer: 2
+  explain: Chữ kí điện tử được dùng với mục đích chính là đảm bảo " người gửi là đúng"
+    và " dữ liệu không bị giả mạo trong quá trình gửi tin". Tuy không thể phòng chống
+    việc dữ liệu bị nghe trộm nhưng do dữ liệu đã được mã hóa nên không thể dễ dàng
+    đọc được.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Có thể bảo mật public key của những văn bản có chữ kí
+  - !ruby/object:Option
+    id: 2
+    content: Có thể phát hiện được việc sửa chữa dữ liệu
+  - !ruby/object:Option
+    id: 3
+    content: Có thể phòng chống được việc nghe trộm dữ liệu
+  - !ruby/object:Option
+    id: 4
+    content: Có thể truyền tin sau khi nén private key liên quan dến văn bản của mình
+- !ruby/object:Question
+  id: 31
+  content: Trong trường hợp click vào nút được đưa lên ở phần bản tin của 1 site,
+    bắt đầu download. Trong trường hợp ấy thì nên làm điều gì thì tốt
+  answer: 2
+  explain: Cũng có khi việc đưa lên bảng tin nhằm mục đích để bạn download các file
+    bất hợp pháp nên bạn cần phải chú ý. Nếu không biết rõ về file đó thì không download.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Download và lưu giữ ở PC
+  - !ruby/object:Option
+    id: 2
+    content: Không download mà cancel
+  - !ruby/object:Option
+    id: 3
+    content: Download và sử dụng file
+  - !ruby/object:Option
+    id: 4
+    content: Để xác nhận lại nội dung sau khi download, share file cho người khác
+- !ruby/object:Question
+  id: 32
+  content: Khi update OS cho smartphone thì đâu là cách nghĩ đúng nhất
+  answer: 1
+  explain: Rất nhiều điện thoại android hay iphone/iPad thực hiện update OS thông
+    qua máy tính hay mạng Lan không dây. Hãy kết nối  smartphone với máy tính cá nhân
+    hay internet và update định kì. Ngoài ra, trường hợp update bằng máy tính cá nhân
+    thì cần thực hiện trên tool update ver mới nhất. Có điều cũng có loại smartphone
+    không thể update OS nên cần phải confirm.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Kết nối định kì  smartphone với máy tính cá nhân hay internet để update
+  - !ruby/object:Option
+    id: 2
+    content: Do smartphone tự động update OS rồi nên không cần để ý
+  - !ruby/object:Option
+    id: 3
+    content: Do smartphone dùng OS đặc biệt nên không cần update
+  - !ruby/object:Option
+    id: 4
+    content: Do OS của smartphone không khác với máy tính cá nhân nên không cần version
+      up
+- !ruby/object:Question
+  id: 33
+  content: Hành động nào làm giảm tính bảo mật ở công ty
+  answer: 3
+  explain: Dù có tăng số kí tự lên nữa thì cũng ko được  tạo password có ý nghĩa như
+    trong từ điển. Vì nguy cơ password bị phá do tấn công từ điển là rất cao.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Chú ý khi nói về  thông tin cá nhân ở elevator
+  - !ruby/object:Option
+    id: 2
+    content: Khi rời khỏi chỗ ngồi thì lock màn hình PC
+  - !ruby/object:Option
+    id: 3
+    content: Tạo password khoảng 12 kí tự từ những từ có trong từ điển
+  - !ruby/object:Option
+    id: 4
+    content: Sắp xếp cẩn thận đồ đạc trên bàn
+- !ruby/object:Question
+  id: 34
+  content: Về nguyên nhân bị nhiễm virut của PC thì nguyên nhân nào khó bị nhiễm virut
+    nhất
+  answer: 4
+  explain: Với những package software mua tại các cửa hàng thì khả năng nhiễm virus
+    là rất thấp. DÙ chỉ dowload file thôi cũng có nguy cơ bị viru
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Download file trên internet
+  - !ruby/object:Option
+    id: 2
+    content: Mở file đính kèm từ mail của bạn
+  - !ruby/object:Option
+    id: 3
+    content: Mở file đính kèm từ mail của người không quen biết
+  - !ruby/object:Option
+    id: 4
+    content: Install những package software được bán ở cửa hàng
+- !ruby/object:Question
+  id: 35
+  content: Để nâng cao tính Bảo mật của công ty IT thì cách suy nghĩ nào là không
+    đúng
+  answer: 2
+  explain: Bảo mật của tổ chức bạn trực thuộc được thực hiện dựa vào ý thức được tích
+    lũy của mỗi người. Không được phó mặc trách nhiệm cho bộ phận info system hay
+    bộ phận phụ trách, mà cần phải bảo vệ nguyên tắc và thực hiện một cách độc lập.
+    Ngoài ra, việc tiếp thu kiến thức cũng làm tăng mức độ quan tâm đến bảo mật
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Có quy định về giới hạn nhất định phải bảo vệ thông tin đối với nhân
+      viên
+  - !ruby/object:Option
+    id: 2
+    content: Nếu giao phó hết  cho bộ phận hệ thống thông tin thì sẽ an tâm
+  - !ruby/object:Option
+    id: 3
+    content: Trong trường hợp có người  không tuân thủ nguyên tắc thì phải liên lạc
+      thông báo với bộ phận thích hợp trong công ty
+  - !ruby/object:Option
+    id: 4
+    content: Học những kiến thức liên quan đến security ở trên web hoặc trên báo
+- !ruby/object:Question
+  id: 36
+  content: Cần chú ý khi nhập password hay số nhận dạng. Giải thích nào dưới đây là
+    sai.
+  answer: 3
+  explain: Khi nhập password hay mã số nhận dạng có khả năng sẽ bị người khác nhìn
+    từ phía sau, hoặc password có thể bị nhận biết do cử động của ngón tay khi đánh
+    máy,vì vậy cần hết sức lưu ý khi nhập. Nếu vừa nhập password vừa đọc ra thành
+    tiếng thì người xung quanh sẽ biết password nên đấy không phải là 1 cách hay.
+    Trường hợp có thể sử dụng software key board( keyboard được hiển thị trên màn
+    hình)  để làm giải pháp cho keylogger thì hãy sử dụng.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Cần chú ý để không bị người đằng sau nhìn trộm màn hình
+  - !ruby/object:Option
+    id: 2
+    content: Gõ chữ sao cho không đọc được cử chỉ đánh máy của ngón tay
+  - !ruby/object:Option
+    id: 3
+    content: Vừa đọc password lên thành tiếng vừa gõ để không bị gõ nhầm
+  - !ruby/object:Option
+    id: 4
+    content: Sử dụng software keyboard.
+- !ruby/object:Question
+  id: '37'
+  content: Khi xử lý các dữ liệu hình ảnh, trường hợp sẽ dễ dàng khi sử dụng phần
+    mềm free nên sử dụng luôn các phần mềm free đó . Phương pháp nào là phương pháp
+    sử dụng nào là thích hợp nhất
+  answer: 3
+  explain: Với những phần mềm không rõ nguồn gốc có thể có chứa virus hay phần mềm
+    gián điệp, vì vậy hãy xác nhận với sếp hoặc người chịu trách nhiệm quản lý hệ
+    thống, nếu an toàn thì sử dụng.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Lựa chọn Install những phần mềm được đánh giá cao trên website dành cho
+      người tiêu dùng đánh giá, sau khi dùng thì uninstall
+  - !ruby/object:Option
+    id: 2
+    content: Khi install thì rút cable internet ( mạng LAN) để dùng
+  - !ruby/object:Option
+    id: 3
+    content: Vì ở công ty không quy định những phần mềm cấm sử dụng nên xác nhận lại
+      những phần mềm đo nếu an toàn sẽ dùng
+  - !ruby/object:Option
+    id: 4
+    content: Vì sử dụng được nê install trên PC của người khác
+- !ruby/object:Question
+  id: 38
+  content: Bao lâu thì cần kiểm tra thông tin mới nhất của file định nghĩa virus của
+    các sản phẩm chống virus
+  answer: 1
+  explain: Hàng ngày, virus hay các phần mềm độc hại đều được truy xuất trên internet.
+    Nếu không udpate file định nghĩa virus, sẽ không thể truy xuất virus và các phần
+    mềm độc hại mới, vì vậy luôn luôn cần sử dụng file định nghĩa virus mới.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Luôn xác nhận thông tin là mới nhất
+  - !ruby/object:Option
+    id: 2
+    content: 2-3 ngày 1 lần
+  - !ruby/object:Option
+    id: 3
+    content: Tuần 1 lần
+  - !ruby/object:Option
+    id: 4
+    content: 2-3 tuần 1 lần
+- !ruby/object:Question
+  id: 39
+  content: Khi copy những thông tin công việc có trong USB thì việc gì dưới đây là
+    không thích hợp nhất
+  answer: 1
+  explain: Trường hợp sử dụng USB memory mà bản thân mình đang dùng, vì mình dùng
+    ở rất nhiều nơi không xác định, không thể xác định tính an toàn nên dễ bị nhiễm
+    virus
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Để giảm số lượng USB phải mang đi thì chỉ sử dụng USB mà bản thân dùng
+  - !ruby/object:Option
+    id: 2
+    content: Mã hóa thông tin và cho vào USB
+  - !ruby/object:Option
+    id: 3
+    content: Khi lấy thông tin ra thì trong trường hợp cần xác nhận lại quy tắc và
+      phải có sự cho phép thì phải nhận được sự cho phép
+  - !ruby/object:Option
+    id: 4
+    content: Đặt pass bảo mật cho USB sau đó cop tài liệu ra
+- !ruby/object:Question
+  id: 40
+  content: Đối phó vơi những mail spam thì việc gì là không đúng nhất?
+  answer: 3
+  explain: Nếu trả lời mail cho người gửi thì chỉ gây ra kết quả ngược lại vì việc
+    đó sẽ giúp người gửi xác nhận được rằng địa chỉ mail họ gửi đến là có thật
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Để phòng chống những mail spam thì không viết một cách không có dụng
+      ý địa chỉ mail lên blog và các bảng thông báo
+  - !ruby/object:Option
+    id: 2
+    content: Trong trường hợp những mail yêu cầu thanh toán mà bản thân không nhớ
+      thì không thanh toán và không để ý đến mail đó.
+  - !ruby/object:Option
+    id: 3
+    content: Nếu nhận được mail Spam,thì gửi mail yêu cầu từ giờ không gửi những mail
+      như thế tới người gửi
+  - !ruby/object:Option
+    id: 4
+    content: Khi nhận được chuỗi các mail thì suy nghĩ xem đâu là mail spam và không
+      gửi cho người khác
+- !ruby/object:Question
+  id: 41
+  content: A san cố gắng nghĩ ra những cách làm để không quên password. Trong số những
+    việc đó thì việc nào không được làm
+  answer: 1
+  explain: Không được thiết định password dễ bị người khác phát hiện
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Thiết lập password sử dụng ngày tháng năm sinh của mình
+  - !ruby/object:Option
+    id: 2
+    content: Viết ở những chỗ không dễ nhìn trên sổ tay, không viết việc liên quan
+      đến pass, chỉ viết những  gợi ý để nhớ ra pass
+  - !ruby/object:Option
+    id: 3
+    content: Tự mình tạo ra những quy tắc dễ hiểu khi tạo password sao cho nếu trong
+      trường hợp quên có thể căn cứ theo những quy tắc đó để có thể nhớ ra được
+  - !ruby/object:Option
+    id: 4
+    content: Sử dụng những thông tin mình dễ nhớ mà những người khác không biết được
+      như là ngày sinh của bà hay ngày pet đến nhà mình
+- !ruby/object:Question
+  id: 42
+  content: Khi nhầm lẫn và mở file đính kèm mail từ người không biết và bị nhiễm virut.
+    Hành động gì nên làm đầu tiên
+  answer: 2
+  explain: Nguyên tắc bắt buộc khi nhận được mail từ người lạ là không mở mail và
+    xóa mail đó đi. Trường hợp chẳng may mở và bị nhiễm virus thì phải ngay lập tức
+    liên lạc với bộ phận info system , đồng thời nhanh chóng rút dây mạng để virus
+    không phát tán rộng.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Chuyển mail cho các đồng nghiệp và cảnh bảo về những virut mà mình bị
+      nhiễm
+  - !ruby/object:Option
+    id: 2
+    content: Ngay lập tức rút dây mạng Lan và thông báo đến bộ phận hệ thống thông
+      tin
+  - !ruby/object:Option
+    id: 3
+    content: Gửi mail khiếu nại đến người gửi
+  - !ruby/object:Option
+    id: 4
+    content: Giữ nguyên và theo dõi hiện tượng để xác nhận xem có thể tiếp tục được
+      đến đâu
+- !ruby/object:Question
+  id: 43
+  content: Khi nhận được điện thoại từ khách hàng do quên password nên muốn được cung
+    cấp lại. Trong trường hợp đó để hỗ trợ cho khách hàng điều bạn không muốn làm
+    là gì
+  answer: 4
+  explain: Việc trả lời password qua điện thoại gọi đến có khả năng sẽ bị giả mạo.
+    Vì vậy nên tránh trả lời trong trường hợp đó.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Cúp máy và gọi lại sau
+  - !ruby/object:Option
+    id: 2
+    content: Gửi bằng mail
+  - !ruby/object:Option
+    id: 3
+    content: Sau khi thiết lập lại password thì sẽ gửi lại
+  - !ruby/object:Option
+    id: 4
+    content: Trả lời luôn
+- !ruby/object:Question
+  id: 44
+  content: Nhận được mail có file đính kèm. Vì không có tên người gửi nên có nhiều
+    điểm không rõ về người gửi,từ nội dung và địa chỉ mail bạn có thể dự đoán được
+    từ nhà cung cấp. Trong trường hợp đó thì phản ứng nào là thích hợp nhất
+  answer: 3
+  explain: Trường hợp là mail đáng nghi như mail chỉ có file đính kèm thì việc xác
+    nhận lại với người gửi là rất quan trọng. Ngoài ra, cũng có trường hợp địa chỉ
+    người gửi bị giả danh do bị nhiễm virus nên việc phán đoán tính an toàn chỉ dựa
+    vào địa chỉ mail là rất nguy hiểm
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Để tiếp tục công việc nhanh chóng thì cứ giữ nguyên và xác nhận file
+  - !ruby/object:Option
+    id: 2
+    content: Vì một mình mình xác nhận thì cảm thấy bất an nên gửi mail có đính kèm
+      file cho đồng nghiệp nhờ xác nhận hộ
+  - !ruby/object:Option
+    id: 3
+    content: Tiến hành liên lạc với người gửi và nhà cung cấp , xác nhận lại việc
+      có gửi tin
+  - !ruby/object:Option
+    id: 4
+    content: Vì không có tên người gửi nên đánh giá như là mail spam
+- !ruby/object:Question
+  id: 45
+  content: Khi thấy người lạ trong phòng, bạn cần làm gì? (chọn đáp án thích hợp nhất)
+  answer: 1
+  explain: Trường hợp thấy người khả nghi hay người không quen biết trong văn phòng,
+    thì hãy kiểm tra thẻ nhân viên hay thẻ guest của người đó, dù có khả nghi hay
+    không thì cũng liên lạc với bộ phận phụ trách. Việc ra chào hỏi hay gọi ra cũng
+    có thể xác định người đó có khả nghi hay không và ngăn cản được các hành vi gian
+    lận, nhưng để chắc chắn thì nên yêu cầu họ trình thẻ hay gì đó chứng minh quyền
+    được phép vào văn phòng
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Kiểm tra xem người đó có thẻ nhân viên hay thẻ guest hoặc có gì chứng
+      minh là có quyền vào phòng hay không
+  - !ruby/object:Option
+    id: 2
+    content: Không biết người đó có đáng nghi hay không nên cứ ra chào hỏi thử.
+  - !ruby/object:Option
+    id: 3
+    content: Chỉ khi thấy người đó có hành động khả nghi thì mới liên lạc với bộ phận
+      phụ trách trong công ty
+  - !ruby/object:Option
+    id: 4
+    content: Mặc dù thấy khả nghi nhưng cảm thấy sẽ thất lễ nếu gọi người đó ra nên
+      cứ để kệ
+- !ruby/object:Question
+  id: 46
+  content: Khi lựa chọn điạ điểm để trao đổi liên quan đến kế hoạch về service mới
+    với cấp trên thì địa điểm nào là thích hợp nhất
+  answer: 4
+  explain: Khi thảo luận về những thông tin quan trọng liên quan đến công việc ở chỗ
+    tụ tập nhiều người không xác định(ví dụ trong xe điện, trong thang máy, hay trong
+    quán rượu) sẽ là nguy cơ dẫn đến rò rỉ thông tin, vì vậy chúng ta nên tránh những
+    chỗ đó ra. Kể cả ở phòng hút thuốc trong  văn phòng thì cũng có những người ở
+    bộ phận khác trong công ty vào nên đây cũng không phải là chỗ lý tưởng.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Sau khi bàn bạc với đối tác, trên đường trở về thì bàn bạc với cấp trên
+      ở các phương tiện di chuyển ( tàu điện, taxi…)
+  - !ruby/object:Option
+    id: 2
+    content: Ở quán rượu sau khi kết thúc công việc
+  - !ruby/object:Option
+    id: 3
+    content: Ở phòng hút thuốc
+  - !ruby/object:Option
+    id: 4
+    content: Phòng dự án trong công ty
+- !ruby/object:Question
+  id: 47
+  content: Trương hợp do nhầm địa chỉ email mà gửi nhầm mail cho đối tác. Người gửi
+    mail muốn xác nhận việc người nhận đã xóa mail chưa. Việc ứng phó nào là không
+    đúng
+  answer: 4
+  explain: Cần kiểm tra xem lẽ ra mail đó định gửi cho ai, nội dung mail bị gửi nhầm
+    là nội dung gì rồi báo cáo và xử lý 1 cách thích hợp.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Thông báo cho cấp trên mail về việc phát sinh ra mail gửi nhầm về thời
+      gian và đối tượng
+  - !ruby/object:Option
+    id: 2
+    content: Để không phát sinh ra những việc tương tự thế thì cần share thông tin
+      về việc đó cho các member khác trong công ty
+  - !ruby/object:Option
+    id: 3
+    content: Tránh xảy ra trường hợp tương tự, sau này trước khi gửi mail thì phải
+      double click
+  - !ruby/object:Option
+    id: 4
+    content: Mail đã xóa rồi, sau đó vì là không có vấn đề gì đặc biệt phát sinh nên
+      việc thông báo trong công ty là không cần, chỉ gửi mail xin lỗi đến địa chỉ
+      đã gửi nhầm mail
+- !ruby/object:Question
+  id: 48
+  content: Tình cờ bạn phát hiện đồng nghiệp của mình copy dữ liệu bảo mật không được
+    phép copy. Đâu là phương án xử lý thích hợp nhất.
+  answer: 4
+  explain: Khi đó là hành vi gian lận hoặc có khả năng gian lận, thì cần phải báo
+    cáo sự việc đó.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Nhắc nhở đồng nghiệp. Sau này nếu có phát sinh vấn đề gì thì cũng không
+      thuộc trách nhiệm của mình
+  - !ruby/object:Option
+    id: 2
+    content: Sau khi hỏi ra thì biết là do đồng nghiệp đó không kịp deadline nên không
+      còn cách nào khác. Và bạn cứ thế bỏ qua
+  - !ruby/object:Option
+    id: 3
+    content: Bạn coi như không nhìn thấy gì vì không muốn làm trầm trọng vấn đề
+  - !ruby/object:Option
+    id: 4
+    content: Nhanh chóng báo tình hình cho người quản lý.
+- !ruby/object:Question
+  id: 49
+  content: Về việc bảo mật những thông tin cá nhân đã nhập vào các site. Việc hiểu
+    nhầm có thể là việc nào dưới đây?
+  answer: 2
+  explain: Kể cả site của các doanh nghiệp nổi tiếng cũng có khi bị giả mạo hay gian
+    lận, nên cần phải kiểm tra thật kĩ xem có phải là truyền tin SSL (chức năng security
+    nhằm mục đích bảo vệ các thông tin xử lý trên internet  khỏi sự ngăn chặn do bên
+    thứ 3) không (= lock mark của browser có đang đóng không), trên màn hình hay khi
+    truyền tin, mail giới thiệu có gì đáng nghi không. Ngoài ra, trường hợp truyền
+    tin bằng https cũng có khả năng gian lận không lấy giấy chứng nhận điện tử chính
+    thức.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: https truyền thông (URL  bắt đầu bằng https://)  những dấu hiệu khóa
+      ( Những dấu hiệu ở status của web browser) nếu được đóng thì vì có thể xác nhận
+      được thông tin mã hóa của người kia nên có thể yên tâm.
+  - !ruby/object:Option
+    id: 2
+    content: Vì đã xác nhận thông tin về công ty và tính an toàn của website nên không
+      lo lắng về vấn đề bảo mật
+  - !ruby/object:Option
+    id: 3
+    content: Việc chú ý là cần thiết  vì không xác nhận chính xác được việc logo của
+      công ty chỉ hiện thỉ trên website chính thức hay không
+  - !ruby/object:Option
+    id: 4
+    content: Về việc bảo đảm với người khác những thông tin cá nhân đã được nhập vào,
+      thì cần thiết phải xác nhận phương châm bảo hộ thông tin cá nhân và mục đích
+      sử dụng trên web
+- !ruby/object:Question
+  id: 50
+  content: Bạn bị mất điện thoại di động cá nhân. Trong điện thoại có lưu thông tin
+    liên quan đến công việc. Đâu là phương án xử lý thích hợp nhất sau khi mất điện
+    thoại.
+  answer: 1
+  explain: Nếu chẳng may điện thoại bị kẻ xấu nhặt được, thì thông tin liên quan đến
+    công việc của công ty sẽ bị sử dụng với ý đồ xấu. Vì vậy, không được tự ý phán
+    đoán mà phải báo cáo theo quy định của công ty.
+  options:
+  - !ruby/object:Option
+    id: 1
+    content: Kiểm tra chính sách bảo mật của công ty và làm theo
+  - !ruby/object:Option
+    id: 2
+    content: Vì đây là điện thoại cá nhân nên không cần phải báo cáo công ty
+  - !ruby/object:Option
+    id: 3
+    content: Ngày hôm sau,bạn chỉ liên lạc với những người liên quan để báo bị mất
+      điện thoại
+  - !ruby/object:Option
+    id: 4
+    content: Không báo cáo gì cả, cứ thế hủy hợp đồng điện thoại và mua điện thoại
+      mới

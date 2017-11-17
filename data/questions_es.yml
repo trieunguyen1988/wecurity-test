@@ -1,0 +1,92 @@
+---
+questions:
+- !ruby/object:Question
+  id: 1
+  content: Đâu là đáp án thích hợp khi kết nối network bên ngoài công ty
+  answer: 1
+  explain: Vi day la xxx111 nen yy222 la dung
+  options:
+  - &1 !ruby/object:Option
+    id: 1
+    content: Dùng máy PC mượn của công ty, nếu file cần xử lý đã được bảo vệ bằng cách mã hóa rồi thì có kết nối vào dịch vụ net nào cũng OK 
+  - &2 !ruby/object:Option
+    id: 2
+    content: Vi trong số các dịch vụ network cũng có những điểm truy cập đáng ngờ, nên nếu xử lý các thông tin quan trọng thì nên chọn dịch vụ của những điểm công cộng để kết nối ( sân bay, nhà ga, khách sạn…)
+  - &3 !ruby/object:Option
+    id: 3
+    content: Trường hợp xử lý các thông tin quan trọng, cần chọn dịch vụ có thể confirm được các giải pháp security để kết nối ví dụ như mã hóa truyền tin dịch vụ network 
+  - &4 !ruby/object:Option
+    id: 4
+    content: Vì kết nối bằng PC rất nguy hiểm nên thay vào đó sẽ kết nối bằng smartphone hay tablet..
+- !ruby/object:Question
+  id: 2
+  content: Từ một địa chỉ email không quen thuộc  bạn nhận được mail quảng cáo chứa URL của sản phẩm. Trong trường hợp đấy thì điều gì là đúng nhất trong số những việc sau đây
+  answer: 1
+  explain: Vi day la aaa111 nen bbb222 la dung
+  options:
+  - &1 !ruby/object:Option
+    id: 1
+    content: Sản phẩm không cần thiết, vì được viết là "Trường hợp muốn dừng việc gửi tin hãy trả lời mail "nên sẽ trả lời
+  - &2 !ruby/object:Option
+    id: 2
+    content: Vì là địa chỉ mail không biết nên không làm gì hết và xóa đi
+  - &3 !ruby/object:Option
+    id: 3
+    content: Vì là sản phẩm không cần thiết nên gọi điện thoại đến nơi gửi và yêu cầu dừng việc gửi tin
+  - &4 !ruby/object:Option
+    id: 4
+    content: Bạn thử Click vào URL chứa trong mail
+- !ruby/object:Question
+  id: 3
+  content: Về lo sợ sẽ bị nhiễm virut thì việc hiểu nhầm có thể là việc nào đưới đây
+  answer: 1
+  explain: Vi day la aaa111 nen bbb222 la dung
+  options:
+  - &1 !ruby/object:Option
+    id: 1
+    content: Lo sợ về việc là dù là website mình vẫn hay vào thì vẫn có khả năng bị nhiễm vi rút bất ngờ
+  - &2 !ruby/object:Option
+    id: 2
+    content: Lo sợ việc bị nhiễm virust từ mail cho dù là từ địa chỉ thường xuyên gửi
+  - &3 !ruby/object:Option
+    id: 3
+    content: Không cần lo lắng về việc bị  nhiễm virut vì CD hoặc DVD không thay đổi được dữ liệu về sau
+  - &4 !ruby/object:Option
+    id: 4
+    content: Việc click mà không chú ý vào những URL chứa trong mail để quảng cáo là nguy hiểm
+- !ruby/object:Question
+  id: 4
+  content: Về điểm chú ý khi sử dụng USB, việc nhầm lẫn nhất có thể là việc gì trong những việc dưới đây
+  answer: 1
+  explain: Vi day la aaa111 nen bbb222 la dung
+  options:
+  - &1 !ruby/object:Option
+    id: 1
+    content: Vì có khả năng sẽ làm mất khi quên không cất vào cặp hay không chú ý mà cho vào túi hay quần áo nên cẩn thận không lưu trữ những dữ liệu  không cần thiết
+  - &2 !ruby/object:Option
+    id: 2
+    content: USB được sử dụng ở PC mà trong gia đình nhiều người sử dụng; PC được đặt ở khách sạn nơi công tác và USB nhận từ người quen thì phải xác nhận việc có nguy cơ bị nhiễm virut hay không và không sử dụng khi không cần thiết
+  - &3 !ruby/object:Option
+    id: 3
+    content: Trường hợp làm việc sử dụng USB bằng máy WindowsPC ,vì muốn sử dụng thông tin càng sớm càng tốt nên sử dụng hiệu quả tính năng Auto Play của Windows
+  - &4 !ruby/object:Option
+    id: 4
+    content: Trường hợp chuyển thông tin từ USB sang PC thì thì sẽ không mở  những file không nhớ trong USB.
+- !ruby/object:Question
+  id: 5
+  content: Suy nghĩ về việc sử dụng thông tin một cách an toàn ở trên Internet thì  việc gì dưới đây việc không đúng nhất
+  answer: 1
+  explain: Vi day la aaa111 nen bbb222 la dung
+  options:
+  - &1 !ruby/object:Option
+    id: 1
+    content: Tránh xa việc vào  những website nghĩ là không tin tưởng được
+  - &2 !ruby/object:Option
+    id: 2
+    content: Chỉ cần install phần mềm đối phó với virut thì có thể an toàn vào các website
+  - &3 !ruby/object:Option
+    id: 3
+    content: Không nên nhập những thông tin cá nhân  hơn mức cần thiết ( tên, nơi ở, số điện thoại, số credit card)
+  - &4 !ruby/object:Option
+    id: 4
+    content: Không download  một cách không suy nghĩ những file mà mình có thể down được từ website

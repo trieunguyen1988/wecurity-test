@@ -1,0 +1,146 @@
+  <!-- DataTables -->
+  <link rel="stylesheet" href="/public/admin/css/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1><%=t 'admin.qs-lbl-list', locale: get_locale %></h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title"></h3>
+          <div class="box-tools">
+            <a href="/admin/questions/create">
+                <button type="button" class="btn btn-block btn-success btn-sm"><i class="fa fa-plus"></i> <%=t 'admin.btn-add', locale: get_locale %></button>
+            </a>
+          </div>
+        </div>
+        <div class="box-body">
+              <table id="question_list" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th></th>
+                  <th>ID</th>
+                  <th><%=t 'admin.qs-content', locale: get_locale %></th>
+                  <th width="15%"><%=t 'admin.qs-answer', locale: get_locale %></th>
+                  <th><%=t 'admin.qs-explain', locale: get_locale %></th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <% if @questions != nil %>
+                <% @questions.each do |question|%>
+                <tr>
+                  <td class=" details-control">
+                  <i class="fa fa-fw fa-plus-circle btn-success" alt="Show options"></i>
+                  </td>
+                  <td><%= question.id %></td>
+                  <td><%= question.content %></td>
+                  <td>No.<%= question.answer %></td>
+                  <td><%= question.explain %></td>
+                  <td>
+                  <a href="/admin/questions/edit/<%= question.id %>">
+                    <button type="button" class="btn btn-block btn-success btn-sm" style="margin-bottom: 4px;"><i class="fa fa-edit"></i> <%=t 'admin.btn-edit', locale: get_locale %></button>
+                  </a>
+                  <a href="/admin/questions/detail/<%= question.id %>">
+                    <button type="button" class="btn btn-block btn-warning btn-sm"><i class="fa fa-eye"></i> <%=t 'admin.btn-detail', locale: get_locale %></button>
+                  </a>
+                  </td>
+                </tr>
+                <% end %>
+                <% end %>                
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th></th>
+                  <th>ID</th>
+                  <th><%=t 'admin.qs-content', locale: get_locale %></th>
+                  <th><%=t 'admin.qs-answer', locale: get_locale %></th>
+                  <th><%=t 'admin.qs-explain', locale: get_locale %></th>
+                  <th></th>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </section>
+    <!-- /.content -->
+    <!-- DataTables -->
+<script src="/public/admin/css/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/public/admin/css/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script>
+var options_json = <%= @options_json%>;
+function format ( question_id ) {
+  var options = options_json[question_id];
+  //var html = '<ul class="nav nav-stacked bg-green disabled">';
+  var html = '<div class="box-group"><div class="panel box box-primary">';
+  html += '<div class="box-header with-border">' +
+              '<h4 class="box-title"> <%=t 'admin.qs-options', locale: get_locale %></h4>' + 
+          '</div>';
+  html += '<div class="box-body"><ul>'
+
+  $.each(options, function(key, value){
+        html += '<li>'+options[key]['id']+'. '+options[key]['content']+'</li>'
+  });
+  
+  html += '</ul></div>'; // .box-body
+  html += '</div>'; // .box-primary
+  html += '</div>'; // .box-group
+  return html;
+}
+
+$(document).ready(function () {
+    var table = $('#question_list').DataTable({
+      'paging'      : true,
+      'pageLength'  : 10,
+      'lengthChange': true,
+      'searching'   : true,
+      'ordering'    : false,
+      'info'        : true,
+      'autoWidth'   : true,
+      "language": {
+                  "sProcessing":   "<%=t 'admin.table-sProcessing', locale: get_locale %>",
+                  "sLengthMenu":   "<%=t 'admin.table-sLengthMenu', locale: get_locale %>",
+                  "sZeroRecords":  "<%=t 'admin.table-sZeroRecords', locale: get_locale %>",
+                  "sInfo":         "<%=t 'admin.table-sInfo', locale: get_locale %>",
+                  "sInfoEmpty":    "<%=t 'admin.table-sInfoEmpty', locale: get_locale %>",
+                  "sInfoFiltered": "<%=t 'admin.table-sInfoFiltered', locale: get_locale %>",
+                  "sInfoPostFix":  "<%=t 'admin.table-sInfoPostFix', locale: get_locale %>",
+                  "sSearch":       "<%=t 'admin.table-sSearch', locale: get_locale %>",
+                  "sUrl":          "<%=t 'admin.table-sUrl', locale: get_locale %>",
+                  "oPaginate": {
+                      "sFirst":    "<%=t 'admin.table-sFirst', locale: get_locale %>",
+                      "sPrevious": "<%=t 'admin.table-sPrevious', locale: get_locale %>",
+                      "sNext":     "<%=t 'admin.table-sNext', locale: get_locale %>",
+                      "sLast":     "<%=t 'admin.table-sLast', locale: get_locale %>"
+                  }
+              }
+    });
+
+    // Add event listener for opening and closing details
+    $('#question_list tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+         
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+            tr.find('.details-control i').removeClass('fa-minus-circle btn-danger');
+            tr.find('.details-control i').addClass('fa-plus-circle btn-success');
+        }
+        else {
+            // Open this row
+            row_data = row.data();
+            row.child( format(row_data[1])).show();
+            tr.addClass('shown');
+            tr.find('.details-control i').removeClass('fa-plus-circle btn-success');
+            tr.find('.details-control i').addClass('fa-minus-circle btn-danger');
+        }
+    } );
+})
+</script>
